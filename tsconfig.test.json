@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": ".test-dist",
+    "lib": ["ES2022", "DOM"]
+  },
+  "include": ["tests/**/*.ts", "src/utils/pokemon.ts", "src/types.ts"]
+}
