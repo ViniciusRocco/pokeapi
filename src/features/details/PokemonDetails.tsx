@@ -1,4 +1,4 @@
-import { useEffect, useState, type CSSProperties } from 'react'
+import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import { ArrowLeft, BarChart3, Heart, LoaderCircle } from 'lucide-react'
 import { getEvolutionChain, getSpecies } from '../../api'
 import { statPt, typeColors } from '../../constants'
@@ -7,6 +7,7 @@ import type { EvolutionNode, Pokemon } from '../../types'
 import { capitalize, formatPokemonId, officialArtwork } from '../../utils/pokemon'
 import { TypeBadge } from '../../components/TypeBadge'
 import { EvolutionChain } from './EvolutionChain'
+import { useDialogFocus } from '../../hooks/useDialogFocus'
 
 interface PokemonDetailsProps {
   pokemon: Pokemon
@@ -19,6 +20,7 @@ export function PokemonDetails({ pokemon, onClose, onOpen }: PokemonDetailsProps
   const [evolution, setEvolution] = useState<EvolutionNode | null>(null)
   const [description, setDescription] = useState('')
   const [loading, setLoading] = useState(true)
+  const dialogRef = useRef<HTMLElement>(null)
   const mainType = pokemon.types[0]?.type.name ?? 'normal'
   const isCompared = compare.some((item) => item.id === pokemon.id)
 
@@ -42,27 +44,27 @@ export function PokemonDetails({ pokemon, onClose, onOpen }: PokemonDetailsProps
     return () => controller.abort()
   }, [pokemon.id])
 
-  useEffect(() => {
-    const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') onClose()
-    }
-    document.addEventListener('keydown', closeOnEscape)
-    return () => document.removeEventListener('keydown', closeOnEscape)
-  }, [onClose])
+  useDialogFocus(dialogRef, onClose)
 
   return (
-    <div className="details-backdrop" role="presentation">
+    <div className="details-backdrop" role="presentation" onMouseDown={onClose}>
       <main
+        ref={dialogRef}
         className="details"
         style={{ '--accent': typeColors[mainType] } as CSSProperties}
         role="dialog"
         aria-modal="true"
         aria-labelledby="pokemon-title"
+        onMouseDown={(event) => event.stopPropagation()}
       >
         <header>
           <button onClick={onClose} aria-label="Voltar para a listagem"><ArrowLeft /></button>
           <span>{formatPokemonId(pokemon.id)}</span>
-          <button onClick={() => toggleFavorite(pokemon)} aria-label="Alternar favorito">
+          <button
+            onClick={() => toggleFavorite(pokemon)}
+            aria-label={isFavorite(pokemon.id) ? `Desfavoritar ${pokemon.name}` : `Favoritar ${pokemon.name}`}
+            aria-pressed={isFavorite(pokemon.id)}
+          >
             <Heart fill={isFavorite(pokemon.id) ? 'currentColor' : 'none'} />
           </button>
         </header>
@@ -103,6 +105,7 @@ export function PokemonDetails({ pokemon, onClose, onOpen }: PokemonDetailsProps
           <button
             className={`compare-button ${isCompared ? 'selected' : ''}`}
             onClick={() => toggleCompare(pokemon)}
+            aria-pressed={isCompared}
           >
             <BarChart3 />
             {isCompared ? 'Remover da comparação' : 'Adicionar à comparação'}

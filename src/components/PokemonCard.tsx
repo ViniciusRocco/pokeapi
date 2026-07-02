@@ -19,7 +19,21 @@ export function PokemonCard({ pokemon, onOpen }: PokemonCardProps) {
   const style = { '--accent': typeColors[mainType] } as CSSProperties
 
   return (
-    <article className="pokemon-card" style={style} onClick={onOpen}>
+    <article
+      className="pokemon-card"
+      style={style}
+      onClick={onOpen}
+      onKeyDown={(event) => {
+        if (event.target !== event.currentTarget) return
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault()
+          onOpen()
+        }
+      }}
+      role="button"
+      tabIndex={0}
+      aria-label={`Ver detalhes de ${capitalize(pokemon.name)}`}
+    >
       <div className="card-copy">
         <span className="number">{formatPokemonId(pokemon.id)}</span>
         <h2>{capitalize(pokemon.name)}</h2>
@@ -37,6 +51,7 @@ export function PokemonCard({ pokemon, onOpen }: PokemonCardProps) {
         className={`heart ${isFavored ? 'active' : ''}`}
         onClick={(event) => { event.stopPropagation(); toggleFavorite(pokemon) }}
         aria-label={isFavored ? `Desfavoritar ${pokemon.name}` : `Favoritar ${pokemon.name}`}
+        aria-pressed={isFavored}
       >
         <Heart fill={isFavored ? 'currentColor' : 'none'} />
       </button>
@@ -45,6 +60,7 @@ export function PokemonCard({ pokemon, onOpen }: PokemonCardProps) {
         className={`compare-toggle ${isCompared ? 'active' : ''}`}
         onClick={(event) => { event.stopPropagation(); toggleCompare(pokemon) }}
         aria-label={isCompared ? `Remover ${pokemon.name} da comparação` : `Comparar ${pokemon.name}`}
+        aria-pressed={isCompared}
       >
         <BarChart3 />
       </button>

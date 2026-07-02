@@ -1,4 +1,4 @@
-import type { EvolutionChain, Pokemon, PokemonSpecies } from './types'
+import type { EvolutionChain, NamedResource, Pokemon, PokemonSpecies } from './types'
 
 const BASE = 'https://pokeapi.co/api/v2'
 
@@ -9,6 +9,40 @@ async function request<T>(path: string, signal?: AbortSignal): Promise<T> {
 }
 
 const pokemonCache = new Map<string, Promise<Pokemon>>()
+
+interface ResourceList { results: NamedResource[] }
+interface TypeResponse { pokemon: { pokemon: NamedResource }[] }
+
+let pokemonIndex: Promise<NamedResource[]> | undefined
+const typeIndex = new Map<string, Promise<Set<number>>>()
+
+function resourceId(resource: NamedResource): number {
+  return Number(resource.url.split('/').filter(Boolean).at(-1))
+}
+
+export function getPokemonIndex(): Promise<NamedResource[]> {
+  pokemonIndex ??= request<ResourceList>('/pokemon?limit=1025')
+    .then(({ results }) => results)
+    .catch((error: unknown) => {
+      pokemonIndex = undefined
+      throw error
+    })
+  return pokemonIndex
+}
+
+export function getPokemonIdsByType(type: string): Promise<Set<number>> {
+  const cached = typeIndex.get(type)
+  if (cached) return cached
+
+  const pending = request<TypeResponse>(`/type/${type}`)
+    .then(({ pokemon }) => new Set(pokemon.map((entry) => resourceId(entry.pokemon))))
+    .catch((error: unknown) => {
+      typeIndex.delete(type)
+      throw error
+    })
+  typeIndex.set(type, pending)
+  return pending
+}
 
 export function getPokemon(nameOrId: string | number, signal?: AbortSignal): Promise<Pokemon> {
   const key = String(nameOrId).toLowerCase()
@@ -39,22 +73,6 @@ export const generationRange = (generation: number | null): [number, number] => 
   return generation ? ranges[generation] : [1, 1025]
 }
 
-export async function getPokemonRange(
-  start: number,
-  end: number,
-  onProgress?: (loaded: Pokemon[]) => void,
-): Promise<Pokemon[]> {
-  const ids = Array.from({ length: end - start + 1 }, (_, index) => start + index)
-  const loaded: Pokemon[] = []
-  const concurrency = 30
-
-  for (let index = 0; index < ids.length; index += concurrency) {
-    const batch = await Promise.all(
-      ids.slice(index, index + concurrency).map((id) => getPokemon(id)),
-    )
-    loaded.push(...batch)
-    onProgress?.([...loaded])
-  }
-
-  return loaded
+export async function getPokemonBatch(ids: number[]): Promise<Pokemon[]> {
+  return Promise.all(ids.map((id) => getPokemon(id)))
 }

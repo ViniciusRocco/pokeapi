@@ -2,6 +2,8 @@
 
 Aplicação React + TypeScript que consome a [PokeAPI](https://pokeapi.co/) e reproduz a linguagem visual dos layouts fornecidos no desafio.
 
+**Deploy:** [viniciusrocco.github.io/pokeapi](https://viniciusrocco.github.io/pokeapi/)
+
 ## Rodando localmente
 
 Requisitos: Node.js 20 ou superior.
@@ -43,7 +45,12 @@ npm test
 - arquitetura organizada por domínio (`components`, `features`, `hooks`, `utils`), mantendo o `App` como camada de composição;
 - Context API para o estado global de favoritos e comparação, evitando dependência adicional para um estado pequeno e previsível;
 - filtros e favoritos persistidos no navegador;
-- listagem inicial com todas as nove gerações; cada geração também pode ser isolada pelo filtro;
-- cache de requisições em memória e concorrência limitada para evitar chamadas duplicadas e pressão excessiva sobre a API;
+- índice das nove gerações carregado em uma única chamada, com detalhes buscados apenas para os cards visíveis;
+- busca e filtros por tipo/geração resolvidos antes do carregamento dos detalhes;
+- cache de requisições em memória para evitar chamadas duplicadas e reduzir a pressão sobre a API;
 - imagens obtidas do campo `official-artwork` da PokeAPI, com fallback para o sprite padrão;
-- testes unitários para busca, filtros múltiplos, limites, ordenação e formatação.
+- testes unitários e de componentes para busca, filtros múltiplos, ordenação, teclado e persistência.
+
+## Deploy
+
+O deploy é automatizado pelo GitHub Actions a cada atualização da branch `main`. O workflow executa testes e build antes de publicar no GitHub Pages.

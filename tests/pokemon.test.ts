@@ -1,5 +1,6 @@
 import type { Pokemon } from '../src/types.js'
 import { defaultFilters, filterPokemon, formatPokemonId, matchesFilters } from '../src/utils/pokemon.js'
+import { test } from 'vitest'
 
 function createPokemon(overrides: Partial<Pokemon> = {}): Pokemon {
   return {
@@ -24,6 +25,7 @@ function assert(condition: boolean, message: string): void {
   console.log(`✓ ${message}`)
 }
 
+test('busca, filtros, limites e ordenação', () => {
 const bulbasaur = createPokemon()
 const charmander = createPokemon({
   id: 4,
@@ -57,3 +59,4 @@ assert(
   filterPokemon([bulbasaur, charmander], '', defaultFilters, 'desc')[0]?.id === 4,
   'ordena por número decrescente',
 )
+})

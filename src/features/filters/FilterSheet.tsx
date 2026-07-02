@@ -1,8 +1,9 @@
-import { useEffect, useState, type CSSProperties } from 'react'
+import { useRef, useState, type CSSProperties } from 'react'
 import { X } from 'lucide-react'
 import { allTypes, typeColors, typePt } from '../../constants'
 import type { Filters } from '../../types'
 import { defaultFilters } from '../../utils/pokemon'
+import { useDialogFocus } from '../../hooks/useDialogFocus'
 
 interface FilterSheetProps {
   value: Filters
@@ -12,14 +13,8 @@ interface FilterSheetProps {
 
 export function FilterSheet({ value, onChange, onClose }: FilterSheetProps) {
   const [draft, setDraft] = useState(value)
-
-  useEffect(() => {
-    const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') onClose()
-    }
-    document.addEventListener('keydown', closeOnEscape)
-    return () => document.removeEventListener('keydown', closeOnEscape)
-  }, [onClose])
+  const dialogRef = useRef<HTMLElement>(null)
+  useDialogFocus(dialogRef, onClose)
 
   function toggleType(type: string) {
     setDraft((current) => ({
@@ -33,6 +28,7 @@ export function FilterSheet({ value, onChange, onClose }: FilterSheetProps) {
   return (
     <div className="sheet-backdrop" onMouseDown={onClose} role="presentation">
       <section
+        ref={dialogRef}
         className="filter-sheet"
         onMouseDown={(event) => event.stopPropagation()}
         role="dialog"
@@ -60,6 +56,7 @@ export function FilterSheet({ value, onChange, onClose }: FilterSheetProps) {
                 className={draft.types.includes(type) ? 'selected' : ''}
                 style={{ '--type': typeColors[type] } as CSSProperties}
                 onClick={() => toggleType(type)}
+                aria-pressed={draft.types.includes(type)}
               >
                 {typePt[type]}
               </button>
