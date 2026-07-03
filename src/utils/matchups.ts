@@ -35,10 +35,11 @@ export interface TeamAnalysis {
   grade: 'S' | 'A' | 'B' | 'C' | 'D' | 'F'
   strongAgainst: string[]
   weakAgainst: string[]
+  weaknessDetails: { type: string; weak: number; resistant: number }[]
 }
 
 export function analyzeTeam(team: Pokemon[], allTypes: string[], relations: RelationsByType): TeamAnalysis {
-  if (team.length === 0) return { coverage: 0, resistance: 0, vulnerability: 0, diversity: 0, score: 0, grade: 'F', strongAgainst: [], weakAgainst: [] }
+  if (team.length === 0) return { coverage: 0, resistance: 0, vulnerability: 0, diversity: 0, score: 0, grade: 'F', strongAgainst: [], weakAgainst: [], weaknessDetails: [] }
 
   const teamTypes = [...new Set(team.flatMap((pokemon) => pokemon.types.map(({ type }) => type.name)))]
   const strongAgainst = allTypes.filter((target) => teamTypes.some((type) => offensiveMultiplier(type, target, relations) > 1))
@@ -52,11 +53,12 @@ export function analyzeTeam(team: Pokemon[], allTypes: string[], relations: Rela
   })
   const resistantTypes = defensive.filter(({ resistant, weak }) => resistant > weak).map(({ type }) => type)
   const weakAgainst = defensive.filter(({ weak, resistant }) => weak > resistant).map(({ type }) => type)
+  const weaknessDetails = defensive.filter(({ weak, resistant }) => weak > resistant)
   const coverage = Math.round((strongAgainst.length / allTypes.length) * 100)
   const resistance = Math.round((resistantTypes.length / allTypes.length) * 100)
   const vulnerability = Math.round((weakAgainst.length / allTypes.length) * 100)
   const diversity = Math.round((teamTypes.length / Math.min(team.length * 2, allTypes.length)) * 100)
   const score = Math.max(0, Math.min(100, Math.round(coverage * 0.45 + resistance * 0.3 + diversity * 0.25 - vulnerability * 0.2)))
   const grade = score >= 85 ? 'S' : score >= 75 ? 'A' : score >= 65 ? 'B' : score >= 50 ? 'C' : score >= 35 ? 'D' : 'F'
-  return { coverage, resistance, vulnerability, diversity, score, grade, strongAgainst, weakAgainst }
+  return { coverage, resistance, vulnerability, diversity, score, grade, strongAgainst, weakAgainst, weaknessDetails }
 }

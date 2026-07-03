@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { LoaderCircle, Plus, Search, Shield, Swords, Trash2 } from 'lucide-react'
 import { getPokemonBatch, getPokemonIndex, getTypeRelations } from '../../api'
 import { allTypes, typePt } from '../../constants'
@@ -18,6 +18,8 @@ export function TeamBuilder({ onOpen }: { onOpen: (pokemon: Pokemon) => void }) 
   const [candidates, setCandidates] = useState<Pokemon[]>([])
   const [relations, setRelations] = useState<RelationsByType>({})
   const [loading, setLoading] = useState(true)
+  const pickerRef = useRef<HTMLElement>(null)
+  const searchRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     localStorage.setItem('pokedex:team', JSON.stringify(team))
@@ -57,6 +59,11 @@ export function TeamBuilder({ onOpen }: { onOpen: (pokemon: Pokemon) => void }) 
       : current.length < size ? [...current, pokemon] : current)
   }
 
+  function openPicker() {
+    pickerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    window.setTimeout(() => searchRef.current?.focus(), 450)
+  }
+
   return <section className="team-builder">
     <header className="team-hero"><div className="battle-logo"><Swords /></div><div><span>ANÁLISE DE BATALHA</span><h1>Monte seu time</h1><p>Escolha seus Pokémon e descubra a cobertura e os riscos da sua equipe.</p></div></header>
 
@@ -65,7 +72,7 @@ export function TeamBuilder({ onOpen }: { onOpen: (pokemon: Pokemon) => void }) 
     <div className={`team-slots slots-${size}`}>{Array.from({ length: size }, (_, index) => {
       const pokemon = team[index]
       return pokemon ? <article className="team-member" key={pokemon.id}><button onClick={() => onOpen(pokemon)}><img src={officialArtwork(pokemon)} alt={capitalize(pokemon.name)} /><b>{capitalize(pokemon.name)}</b><div>{pokemon.types.map(({ type }) => <TypeBadge key={type.name} type={type.name} />)}</div></button><button className="remove-member" onClick={() => togglePokemon(pokemon)} aria-label={`Remover ${pokemon.name}`}><Trash2 /></button></article>
-        : <div className="empty-slot" key={index}><Plus /><span>Escolher</span></div>
+        : <button className="empty-slot" onClick={openPicker} key={index}><Plus /><span>Escolher</span></button>
     })}</div>
 
     <section className="team-analysis"><div className={`grade-card grade-${analysis.grade}`}><span>NOTA DO TIME</span><strong>{analysis.grade}</strong><b>{analysis.score}/100</b><small>{team.length < size ? `Adicione mais ${size - team.length}` : 'Time completo'}</small></div><div className="analysis-metrics">
@@ -75,9 +82,11 @@ export function TeamBuilder({ onOpen }: { onOpen: (pokemon: Pokemon) => void }) 
       <Metric label="Diversidade de tipos" value={analysis.diversity} tone="neutral" />
     </div></section>
 
-    <div className="team-matchups"><div><h2><Swords /> Forte contra</h2><div>{analysis.strongAgainst.map((type) => <span key={type}>{typePt[type]}</span>)}</div></div><div><h2><Shield /> Vulnerável contra</h2><div className="weak">{analysis.weakAgainst.map((type) => <span key={type}>{typePt[type]}</span>)}</div></div></div>
+    <details className="score-explanation"><summary>Como a nota é calculada?</summary><div><p><b>45%</b> cobertura ofensiva + <b>30%</b> resistências + <b>25%</b> diversidade − <b>20%</b> vulnerabilidades.</p><p>Faixas: <b>S 85–100</b>, A 75–84, B 65–74, C 50–64, D 35–49 e F 0–34.</p><p>Exemplo de time S: Palpitoad, Solrock, Mawile, Scovillain, Overqwil e Pheromosa.</p></div></details>
 
-    <section className="pokemon-picker"><div><h2>Escolha qualquer Pokémon</h2><p>{team.length}/{size} selecionados</p></div><label><Search /><input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Buscar por nome ou número..." /></label>
+    <div className="team-matchups"><div><h2><Swords /> Forte contra</h2><p>Tipos que sua equipe cobre com dano super efetivo.</p><div>{analysis.strongAgainst.map((type) => <span key={type}>{typePt[type]}</span>)}</div></div><div><h2><Shield /> Tipos que deixam o time em desvantagem</h2><p>Há mais integrantes fracos do que resistentes a estes tipos.</p><div className="weak">{analysis.weaknessDetails.map(({ type, weak, resistant }) => <span key={type}>{typePt[type]} <small>{weak} fraco{weak > 1 ? 's' : ''} · {resistant} resiste{resistant === 1 ? '' : 'm'}</small></span>)}</div></div></div>
+
+    <section className="pokemon-picker" ref={pickerRef}><div><h2>Escolha qualquer Pokémon</h2><p>{team.length}/{size} selecionados</p></div><label><Search /><input ref={searchRef} value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Buscar por nome ou número..." /></label>
       {loading ? <LoaderCircle className="spin" /> : <div className="candidate-grid">{candidates.map((pokemon) => {
         const selected = team.some((item) => item.id === pokemon.id)
         return <button className={selected ? 'selected' : ''} onClick={() => togglePokemon(pokemon)} disabled={!selected && team.length >= size} key={pokemon.id}><img src={officialArtwork(pokemon)} alt="" /><span>{capitalize(pokemon.name)}</span><small>{pokemon.types.map(({ type }) => typePt[type.name]).join(' · ')}</small>{selected && <b>✓</b>}</button>
