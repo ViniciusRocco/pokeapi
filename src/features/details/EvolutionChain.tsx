@@ -50,14 +50,16 @@ function EvolutionAdvice({ current, child }: { current: Pokemon; child: Evolutio
     return () => { active = false }
   }, [child.species.name])
   if (!evolution) return null
-  const advice = recommendedEvolutionLevel(current, evolution, child.evolution_details[0]?.min_level ?? null)
-  return <em title={advice.reason}>{advice.level ? `Sugestão: nível ${advice.level}` : 'Pode evoluir agora'}</em>
+  const minimumLevel = child.evolution_details[0]?.min_level ?? null
+  if (minimumLevel) return null
+  const advice = recommendedEvolutionLevel(current, evolution, minimumLevel)
+  return <em title={advice.reason}>{advice.level ? `Melhor após o nível ${advice.level}` : 'Pode evoluir agora'}</em>
 }
 
 function evolutionRequirement(node: EvolutionNode): string {
   const detail = node.evolution_details[0]
   if (!detail) return 'Evolução'
-  if (detail.min_level) return `Nível ${detail.min_level}`
+  if (detail.min_level) return `Evolui no nível ${detail.min_level}`
   if (detail.item) return detail.item.name.replaceAll('-', ' ')
   if (detail.trigger.name === 'trade') return 'Troca'
   if (detail.trigger.name === 'use-item') return 'Usar item'

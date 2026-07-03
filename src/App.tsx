@@ -88,7 +88,6 @@ export default function App() {
           <>
             <header className="topbar">
               <div><h1>Pokédex</h1></div>
-              <div className="pokeball" aria-hidden="true"><img src={`${import.meta.env.BASE_URL}assets/iconoir_pokeball.png`} alt="" /></div>
             </header>
 
             <>
