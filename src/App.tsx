@@ -11,8 +11,11 @@ import { PokemonCard } from './components/PokemonCard'
 import { CompareView } from './features/compare/CompareView'
 import { PokemonDetails } from './features/details/PokemonDetails'
 import { FilterSheet } from './features/filters/FilterSheet'
+import { WelcomeFlow } from './features/auth/WelcomeFlow'
+import { FavoritesView } from './features/favorites/FavoritesView'
+import { ProfileView } from './features/profile/ProfileView'
+import { TeamBuilder } from './features/team/TeamBuilder'
 import { usePokemonCatalog } from './hooks/usePokemonCatalog'
-import { useStore } from './store'
 import type { Filters, Pokemon, View } from './types'
 import { defaultFilters, readStoredFilters } from './utils/pokemon'
 
@@ -30,15 +33,13 @@ export default function App() {
   const [filters, setFilters] = useState<Filters>(readStoredFilters)
   const [filtersOpen, setFiltersOpen] = useState(false)
   const [selected, setSelected] = useState<Pokemon | null>(null)
+  const [welcome, setWelcome] = useState<'first' | 'choice' | null>(
+    () => localStorage.getItem('pokedex:onboarded') === 'true' ? null : 'first',
+  )
   const searchInput = useRef<HTMLInputElement>(null)
-  const { favorites } = useStore()
   const catalog = usePokemonCatalog(search, filters, sort)
 
-  const displayedPokemon = view === 'favorites'
-    ? favorites
-    : catalog.pokemon
-
-  const title = view === 'favorites' ? 'Meus favoritos' : 'Pokédex'
+  const displayedPokemon = catalog.pokemon
   const filterCount = activeFilterCount(filters)
 
   useEffect(() => {
@@ -61,6 +62,15 @@ export default function App() {
     setSearch(value)
   }
 
+  function closeWelcome() {
+    localStorage.setItem('pokedex:onboarded', 'true')
+    setWelcome(null)
+  }
+
+  if (welcome) {
+    return <WelcomeFlow firstRun={welcome === 'first'} onComplete={closeWelcome} />
+  }
+
   return (
     <div className="app-shell">
       <DesktopNavigation view={view} onChange={setView} />
@@ -68,15 +78,20 @@ export default function App() {
       <div className="main-column">
         {view === 'compare' ? (
           <CompareView onSelect={setSelected} />
+        ) : view === 'team' ? (
+          <TeamBuilder onOpen={setSelected} />
+        ) : view === 'profile' ? (
+          <ProfileView onAuthenticate={() => setWelcome('choice')} />
+        ) : view === 'favorites' ? (
+          <FavoritesView onOpen={setSelected} onAuthenticate={() => setWelcome('choice')} />
         ) : (
           <>
             <header className="topbar">
-              <div><h1>{title}</h1></div>
-              <div className="pokeball" aria-hidden="true">◓</div>
+              <div><h1>Pokédex</h1></div>
+              <div className="pokeball" aria-hidden="true"><img src={`${import.meta.env.BASE_URL}assets/iconoir_pokeball.png`} alt="" /></div>
             </header>
 
-            {view === 'pokedex' && (
-              <>
+            <>
                 <div className="toolbar">
                   <label className="search">
                     <Search />
@@ -107,8 +122,7 @@ export default function App() {
                     </button>
                   </div>
                 </div>
-              </>
-            )}
+            </>
 
             <main className="pokemon-grid">
               {displayedPokemon.map((pokemon) => (
@@ -116,14 +130,14 @@ export default function App() {
               ))}
             </main>
 
-            {catalog.loading && view === 'pokedex' && (
+            {catalog.loading && (
               <div className="loading" role="status">
                 <LoaderCircle className="spin" />
                 Carregando Pokémons...
               </div>
             )}
 
-            {catalog.error && view === 'pokedex' && (
+            {catalog.error && (
               <div className="error" role="alert">
                 <p>{catalog.error}</p>
                 <button onClick={catalog.reload}><RefreshCw /> Tentar novamente</button>
@@ -137,7 +151,7 @@ export default function App() {
               </div>
             )}
 
-            {view === 'pokedex' && !catalog.loading && catalog.hasMore && (
+            {!catalog.loading && catalog.hasMore && (
               <button className="load-more" onClick={catalog.loadMore}>
                 Carregar mais
               </button>

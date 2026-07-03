@@ -1,4 +1,4 @@
-import type { EvolutionChain, NamedResource, Pokemon, PokemonSpecies } from './types'
+import type { EvolutionChain, MoveDetail, NamedResource, Pokemon, PokemonSpecies, TypeDamageRelations } from './types'
 
 const BASE = 'https://pokeapi.co/api/v2'
 
@@ -11,10 +11,12 @@ async function request<T>(path: string, signal?: AbortSignal): Promise<T> {
 const pokemonCache = new Map<string, Promise<Pokemon>>()
 
 interface ResourceList { results: NamedResource[] }
-interface TypeResponse { pokemon: { pokemon: NamedResource }[] }
+interface TypeResponse { pokemon: { pokemon: NamedResource }[]; damage_relations: TypeDamageRelations }
 
 let pokemonIndex: Promise<NamedResource[]> | undefined
 const typeIndex = new Map<string, Promise<Set<number>>>()
+const typeRelationsCache = new Map<string, Promise<TypeDamageRelations>>()
+const moveCache = new Map<string, Promise<MoveDetail>>()
 
 function resourceId(resource: NamedResource): number {
   return Number(resource.url.split('/').filter(Boolean).at(-1))
@@ -41,6 +43,30 @@ export function getPokemonIdsByType(type: string): Promise<Set<number>> {
       throw error
     })
   typeIndex.set(type, pending)
+  return pending
+}
+
+export function getTypeRelations(type: string): Promise<TypeDamageRelations> {
+  const cached = typeRelationsCache.get(type)
+  if (cached) return cached
+  const pending = request<TypeResponse>(`/type/${type}`)
+    .then(({ damage_relations }) => damage_relations)
+    .catch((error: unknown) => {
+      typeRelationsCache.delete(type)
+      throw error
+    })
+  typeRelationsCache.set(type, pending)
+  return pending
+}
+
+export function getMove(name: string): Promise<MoveDetail> {
+  const cached = moveCache.get(name)
+  if (cached) return cached
+  const pending = request<MoveDetail>(`/move/${name}`).catch((error: unknown) => {
+    moveCache.delete(name)
+    throw error
+  })
+  moveCache.set(name, pending)
   return pending
 }
 

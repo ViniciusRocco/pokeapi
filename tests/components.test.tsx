@@ -3,6 +3,7 @@ import userEvent from '@testing-library/user-event'
 import { describe, expect, test, vi } from 'vitest'
 import { PokemonCard } from '../src/components/PokemonCard'
 import { FilterSheet } from '../src/features/filters/FilterSheet'
+import { WelcomeFlow } from '../src/features/auth/WelcomeFlow'
 import { StoreProvider } from '../src/store'
 import { defaultFilters } from '../src/utils/pokemon'
 import type { Pokemon } from '../src/types'
@@ -56,4 +57,18 @@ test('aplica filtros múltiplos', async () => {
   await user.click(screen.getByRole('button', { name: /aplicar filtros/i }))
 
   expect(onChange).toHaveBeenCalledWith(expect.objectContaining({ types: ['fire'], generation: 1 }))
+})
+
+test('conclui o acesso Google em modo demonstrativo', async () => {
+  const user = userEvent.setup()
+  const onComplete = vi.fn()
+  render(<StoreProvider><WelcomeFlow initialStep="login-provider" onComplete={onComplete} /></StoreProvider>)
+
+  await user.click(screen.getByRole('button', { name: /continuar com o google/i }))
+  await user.type(screen.getByLabelText('Nome'), 'Ash Ketchum')
+  await user.type(screen.getByLabelText('E-mail do Google'), 'ash@gmail.com')
+  await user.click(screen.getByRole('button', { name: 'Continuar' }))
+
+  expect(await screen.findByText(/bem-vindo de volta/i, {}, { timeout: 2000 })).toBeInTheDocument()
+  expect(JSON.parse(localStorage.getItem('pokedex:session') ?? '{}')).toMatchObject({ email: 'ash@gmail.com' })
 })

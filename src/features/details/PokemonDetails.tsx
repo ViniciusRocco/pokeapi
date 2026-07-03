@@ -8,6 +8,8 @@ import { capitalize, formatPokemonId, officialArtwork } from '../../utils/pokemo
 import { TypeBadge } from '../../components/TypeBadge'
 import { EvolutionChain } from './EvolutionChain'
 import { useDialogFocus } from '../../hooks/useDialogFocus'
+import { MoveInsights } from './MoveInsights'
+import { TypeMatchups } from './TypeMatchups'
 
 interface PokemonDetailsProps {
   pokemon: Pokemon
@@ -101,6 +103,9 @@ export function PokemonDetails({ pokemon, onClose, onOpen }: PokemonDetailsProps
               </div>
             ))}
           </div>
+
+          <MoveInsights pokemon={pokemon} />
+          <TypeMatchups pokemon={pokemon} />
 
           <button
             className={`compare-button ${isCompared ? 'selected' : ''}`}
