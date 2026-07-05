@@ -24,4 +24,4 @@ export interface TypeDamageRelations {
 }
 export interface Filters { types: string[]; generation: number | null; minHeight: number; maxHeight: number; minWeight: number; maxWeight: number }
 export interface Account { name: string; email: string }
-export type View = 'pokedex' | 'favorites' | 'compare' | 'team' | 'profile'
+export type View = 'pokedex' | 'favorites' | 'compare' | 'team' | 'guide' | 'profile'

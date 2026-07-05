@@ -1,0 +1,4411 @@
+[
+  {
+    "id": "johto",
+    "name": "Johto",
+    "game": "HeartGold / SoulSilver",
+    "source": "domtronn/nuzlocke.data: leagues/hgss.txt",
+    "battles": [
+      {
+        "id": "johto-1",
+        "order": 1,
+        "trainer": "Falkner",
+        "title": "Líder de Ginásio",
+        "specialty": "flying",
+        "location": "Violet",
+        "badge": "Insígnia de Violet",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          11,
+          14
+        ],
+        "description": "Falkner usa uma estratégia centrada no tipo flying. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#6f91ce",
+        "party": [
+          {
+            "pokemon": "pidgey",
+            "level": 9,
+            "moves": [
+              "tackle",
+              "sand-attack"
+            ],
+            "ability": "keen-eye"
+          },
+          {
+            "pokemon": "pidgeotto",
+            "level": 13,
+            "moves": [
+              "tackle",
+              "roost",
+              "gust"
+            ],
+            "ability": "keen-eye"
+          }
+        ],
+        "recommendedPokemonIds": [
+          25,
+          74,
+          81,
+          220
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo flying.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "johto-2",
+        "order": 2,
+        "trainer": "Bugsy",
+        "title": "Líder de Ginásio",
+        "specialty": "bug",
+        "location": "Azalea",
+        "badge": "Insígnia de Azalea",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          15,
+          18
+        ],
+        "description": "Bugsy usa uma estratégia centrada no tipo bug. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#7fa33b",
+        "party": [
+          {
+            "pokemon": "scyther",
+            "level": 17,
+            "moves": [
+              "quick-attack",
+              "leer",
+              "u-turn",
+              "focus-energy"
+            ],
+            "ability": "technician",
+            "heldItem": "sitrus-berry"
+          },
+          {
+            "pokemon": "kakuna",
+            "level": 15,
+            "moves": [
+              "poison-sting"
+            ],
+            "ability": "shed-skin"
+          },
+          {
+            "pokemon": "metapod",
+            "level": 15,
+            "moves": [
+              "tackle"
+            ],
+            "ability": "shed-skin"
+          }
+        ],
+        "recommendedPokemonIds": [
+          4,
+          16,
+          74,
+          228
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo bug.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "johto-3",
+        "order": 3,
+        "trainer": "Whitney",
+        "title": "Líder de Ginásio",
+        "specialty": "normal",
+        "location": "Goldenrod",
+        "badge": "Insígnia de Goldenrod",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          17,
+          20
+        ],
+        "description": "Whitney usa uma estratégia centrada no tipo normal. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#8b9299",
+        "party": [
+          {
+            "pokemon": "clefairy",
+            "level": 17,
+            "moves": [
+              "double-slap",
+              "mimic",
+              "encore",
+              "metronome"
+            ],
+            "ability": "cute-charm"
+          },
+          {
+            "pokemon": "miltank",
+            "level": 19,
+            "moves": [
+              "rollout",
+              "attract",
+              "stomp",
+              "milk-drink"
+            ],
+            "ability": "scrappy",
+            "heldItem": "lum-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          56,
+          57,
+          66,
+          67
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo normal.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "johto-4",
+        "order": 4,
+        "trainer": "Morty",
+        "title": "Líder de Ginásio",
+        "specialty": "ghost",
+        "location": "Ecruteak",
+        "badge": "Insígnia de Ecruteak",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          23,
+          26
+        ],
+        "description": "Morty usa uma estratégia centrada no tipo ghost. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#665a9c",
+        "party": [
+          {
+            "pokemon": "gastly",
+            "level": 21,
+            "moves": [
+              "lick",
+              "spite",
+              "mean-look",
+              "curse"
+            ],
+            "ability": "levitate"
+          },
+          {
+            "pokemon": "haunter",
+            "level": 21,
+            "moves": [
+              "hypnosis",
+              "dream-eater",
+              "curse",
+              "nightmare"
+            ],
+            "ability": "levitate"
+          },
+          {
+            "pokemon": "gengar",
+            "level": 25,
+            "moves": [
+              "hypnosis",
+              "shadow-ball",
+              "mean-look",
+              "sucker-punch"
+            ],
+            "ability": "levitate",
+            "heldItem": "sitrus-berry"
+          },
+          {
+            "pokemon": "haunter",
+            "level": 23,
+            "moves": [
+              "curse",
+              "mean-look",
+              "sucker-punch",
+              "night-shade"
+            ],
+            "ability": "levitate"
+          }
+        ],
+        "recommendedPokemonIds": [
+          19,
+          92,
+          198,
+          215
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo ghost.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "johto-5",
+        "order": 5,
+        "trainer": "Chuck",
+        "title": "Líder de Ginásio",
+        "specialty": "fighting",
+        "location": "Cianwood",
+        "badge": "Insígnia de Cianwood",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          29,
+          32
+        ],
+        "description": "Chuck usa uma estratégia centrada no tipo fighting. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#c3455c",
+        "party": [
+          {
+            "pokemon": "primeape",
+            "level": 29,
+            "moves": [
+              "leer",
+              "double-team",
+              "focus-punch",
+              "rock-slide"
+            ],
+            "ability": "vital-spirit"
+          },
+          {
+            "pokemon": "poliwrath",
+            "level": 31,
+            "moves": [
+              "hypnosis",
+              "surf",
+              "focus-punch",
+              "body-slam"
+            ],
+            "ability": "water-absorb",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          16,
+          63,
+          92,
+          177
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo fighting.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "johto-6",
+        "order": 6,
+        "trainer": "Jasmine",
+        "title": "Líder de Ginásio",
+        "specialty": "steel",
+        "location": "Olivine",
+        "badge": "Insígnia de Olivine",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          33,
+          36
+        ],
+        "description": "Jasmine usa uma estratégia centrada no tipo steel. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#658e9c",
+        "party": [
+          {
+            "pokemon": "magnemite",
+            "level": 30,
+            "moves": [
+              "thunderbolt",
+              "supersonic",
+              "sonic-boom",
+              "thunder-wave"
+            ],
+            "ability": "magnet-pull"
+          },
+          {
+            "pokemon": "magnemite",
+            "level": 30,
+            "moves": [
+              "thunderbolt",
+              "supersonic",
+              "sonic-boom",
+              "thunder-wave"
+            ],
+            "ability": "sturdy"
+          },
+          {
+            "pokemon": "steelix",
+            "level": 35,
+            "moves": [
+              "screech",
+              "sandstorm",
+              "rock-throw",
+              "iron-tail"
+            ],
+            "ability": "sturdy",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          4,
+          50,
+          56,
+          58
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo steel.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "johto-7",
+        "order": 7,
+        "trainer": "Pryce",
+        "title": "Líder de Ginásio",
+        "specialty": "ice",
+        "location": "Mahogany",
+        "badge": "Insígnia de Mahogany",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          32,
+          35
+        ],
+        "description": "Pryce usa uma estratégia centrada no tipo ice. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#5bb8c6",
+        "party": [
+          {
+            "pokemon": "seel",
+            "level": 30,
+            "moves": [
+              "snore",
+              "hail",
+              "icy-wind",
+              "rest"
+            ],
+            "ability": "thick-fat"
+          },
+          {
+            "pokemon": "dewgong",
+            "level": 32,
+            "moves": [
+              "sleep-talk",
+              "ice-shard",
+              "aurora-beam",
+              "rest"
+            ],
+            "ability": "thick-fat"
+          },
+          {
+            "pokemon": "piloswine",
+            "level": 34,
+            "moves": [
+              "hail",
+              "ice-fang",
+              "mud-bomb",
+              "blizzard"
+            ],
+            "ability": "snow-cloak",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          58,
+          66,
+          74,
+          81
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo ice.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "johto-8",
+        "order": 8,
+        "trainer": "Clair",
+        "title": "Líder de Ginásio",
+        "specialty": "dragon",
+        "location": "Blackthorn",
+        "badge": "Insígnia de Blackthorn",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          39,
+          42
+        ],
+        "description": "Clair usa uma estratégia centrada no tipo dragon. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#526bc2",
+        "party": [
+          {
+            "pokemon": "gyarados",
+            "level": 38,
+            "moves": [
+              "twister",
+              "dragon-rage",
+              "bite",
+              "dragon-pulse"
+            ],
+            "ability": "intimidate"
+          },
+          {
+            "pokemon": "dragonair",
+            "level": 38,
+            "moves": [
+              "thunder-wave",
+              "fire-blast",
+              "slam",
+              "dragon-pulse"
+            ],
+            "ability": "shed-skin"
+          },
+          {
+            "pokemon": "dragonair",
+            "level": 38,
+            "moves": [
+              "thunder-wave",
+              "aqua-tail",
+              "slam",
+              "dragon-pulse"
+            ],
+            "ability": "shed-skin"
+          },
+          {
+            "pokemon": "kingdra",
+            "level": 41,
+            "moves": [
+              "smokescreen",
+              "hydro-pump",
+              "hyper-beam",
+              "dragon-pulse"
+            ],
+            "ability": "sniper",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          35,
+          124,
+          220,
+          333
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo dragon.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hoenn",
+    "name": "Hoenn",
+    "game": "Emerald",
+    "source": "domtronn/nuzlocke.data: leagues/em.txt",
+    "battles": [
+      {
+        "id": "hoenn-1",
+        "order": 1,
+        "trainer": "Roxanne",
+        "title": "Líder de Ginásio",
+        "specialty": "rock",
+        "location": "Rustboro",
+        "badge": "Insígnia de Rustboro",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          13,
+          16
+        ],
+        "description": "Roxanne usa uma estratégia centrada no tipo rock. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#9b8258",
+        "party": [
+          {
+            "pokemon": "geodude",
+            "level": 12,
+            "moves": [
+              "tackle",
+              "defense-curl",
+              "rock-throw",
+              "rock-tomb"
+            ],
+            "ability": "rock-head"
+          },
+          {
+            "pokemon": "geodude",
+            "level": 12,
+            "moves": [
+              "tackle",
+              "defense-curl",
+              "rock-throw",
+              "rock-tomb"
+            ],
+            "ability": "rock-head"
+          },
+          {
+            "pokemon": "nosepass",
+            "level": 15,
+            "moves": [
+              "block",
+              "harden",
+              "tackle",
+              "rock-tomb"
+            ],
+            "ability": "sturdy"
+          }
+        ],
+        "recommendedPokemonIds": [
+          1,
+          7,
+          56,
+          60
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo rock.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "hoenn-2",
+        "order": 2,
+        "trainer": "Brawly",
+        "title": "Líder de Ginásio",
+        "specialty": "fighting",
+        "location": "Dewford",
+        "badge": "Insígnia de Dewford",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          17,
+          20
+        ],
+        "description": "Brawly usa uma estratégia centrada no tipo fighting. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#c3455c",
+        "party": [
+          {
+            "pokemon": "machop",
+            "level": 16,
+            "moves": [
+              "karate-chop",
+              "low-kick",
+              "seismic-toss",
+              "bulk-up"
+            ],
+            "ability": "guts"
+          },
+          {
+            "pokemon": "meditite",
+            "level": 16,
+            "moves": [
+              "focus-punch",
+              "light-screen",
+              "reflect",
+              "bulk-up"
+            ],
+            "ability": "pure-power"
+          },
+          {
+            "pokemon": "makuhita",
+            "level": 19,
+            "moves": [
+              "arm-thrust",
+              "vital-throw",
+              "reversal",
+              "bulk-up"
+            ],
+            "ability": "guts",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          16,
+          63,
+          92,
+          177
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo fighting.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "hoenn-3",
+        "order": 3,
+        "trainer": "Wattson",
+        "title": "Líder de Ginásio",
+        "specialty": "electric",
+        "location": "Mauville",
+        "badge": "Insígnia de Mauville",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          22,
+          25
+        ],
+        "description": "Wattson usa uma estratégia centrada no tipo electric. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#e7b91e",
+        "party": [
+          {
+            "pokemon": "voltorb",
+            "level": 20,
+            "moves": [
+              "rollout",
+              "spark",
+              "self-destruct",
+              "shock-wave"
+            ],
+            "ability": "soundproof"
+          },
+          {
+            "pokemon": "electrike",
+            "level": 20,
+            "moves": [
+              "shock-wave",
+              "leer",
+              "quick-attack",
+              "howl"
+            ],
+            "ability": "static"
+          },
+          {
+            "pokemon": "magneton",
+            "level": 22,
+            "moves": [
+              "supersonic",
+              "thunder-wave",
+              "shock-wave",
+              "sonic-boom"
+            ],
+            "ability": "magnet-pull"
+          },
+          {
+            "pokemon": "manectric",
+            "level": 24,
+            "moves": [
+              "quick-attack",
+              "shock-wave",
+              "thunder-wave",
+              "howl"
+            ],
+            "ability": "static",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          27,
+          50,
+          74,
+          328
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo electric.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "hoenn-4",
+        "order": 4,
+        "trainer": "Flannery",
+        "title": "Líder de Ginásio",
+        "specialty": "fire",
+        "location": "Lavaridge",
+        "badge": "Insígnia de Lavaridge",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          27,
+          30
+        ],
+        "description": "Flannery usa uma estratégia centrada no tipo fire. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#e05b38",
+        "party": [
+          {
+            "pokemon": "numel",
+            "level": 24,
+            "moves": [
+              "overheat",
+              "take-down",
+              "magnitude",
+              "sunny-day"
+            ],
+            "ability": "oblivious"
+          },
+          {
+            "pokemon": "slugma",
+            "level": 24,
+            "moves": [
+              "overheat",
+              "smog",
+              "light-screen",
+              "sunny-day"
+            ],
+            "ability": "magma-armor"
+          },
+          {
+            "pokemon": "camerupt",
+            "level": 26,
+            "moves": [
+              "overheat",
+              "tackle",
+              "sunny-day",
+              "attract"
+            ],
+            "ability": "magma-armor"
+          },
+          {
+            "pokemon": "torkoal",
+            "level": 29,
+            "moves": [
+              "overheat",
+              "sunny-day",
+              "body-slam",
+              "attract"
+            ],
+            "ability": "white-smoke",
+            "heldItem": "white-herb"
+          }
+        ],
+        "recommendedPokemonIds": [
+          7,
+          54,
+          74,
+          194
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo fire.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "hoenn-5",
+        "order": 5,
+        "trainer": "Norman",
+        "title": "Líder de Ginásio",
+        "specialty": "normal",
+        "location": "Petalburg",
+        "badge": "Insígnia de Petalburg",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          29,
+          32
+        ],
+        "description": "Norman usa uma estratégia centrada no tipo normal. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#8b9299",
+        "party": [
+          {
+            "pokemon": "spinda",
+            "level": 27,
+            "moves": [
+              "teeter-dance",
+              "psybeam",
+              "facade",
+              "encore"
+            ],
+            "ability": "own-tempo"
+          },
+          {
+            "pokemon": "vigoroth",
+            "level": 27,
+            "moves": [
+              "slash",
+              "facade",
+              "encore",
+              "feint-attack"
+            ],
+            "ability": "vital-spirit"
+          },
+          {
+            "pokemon": "linoone",
+            "level": 29,
+            "moves": [
+              "slash",
+              "belly-drum",
+              "facade",
+              "headbutt"
+            ],
+            "ability": "pickup"
+          },
+          {
+            "pokemon": "slaking",
+            "level": 31,
+            "moves": [
+              "counter",
+              "yawn",
+              "facade",
+              "feint-attack"
+            ],
+            "ability": "truant",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          56,
+          57,
+          66,
+          67
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo normal.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "hoenn-6",
+        "order": 6,
+        "trainer": "Winona",
+        "title": "Líder de Ginásio",
+        "specialty": "flying",
+        "location": "Fortree",
+        "badge": "Insígnia de Fortree",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          31,
+          34
+        ],
+        "description": "Winona usa uma estratégia centrada no tipo flying. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#6f91ce",
+        "party": [
+          {
+            "pokemon": "swablu",
+            "level": 29,
+            "moves": [
+              "perish-song",
+              "mirror-move",
+              "safeguard",
+              "aerial-ace"
+            ],
+            "ability": "natural-cure"
+          },
+          {
+            "pokemon": "tropius",
+            "level": 29,
+            "moves": [
+              "sunny-day",
+              "aerial-ace",
+              "solar-beam",
+              "synthesis"
+            ],
+            "ability": "chlorophyll"
+          },
+          {
+            "pokemon": "pelipper",
+            "level": 30,
+            "moves": [
+              "water-gun",
+              "supersonic",
+              "protect",
+              "aerial-ace"
+            ],
+            "ability": "keen-eye"
+          },
+          {
+            "pokemon": "skarmory",
+            "level": 31,
+            "moves": [
+              "sand-attack",
+              "fury-attack",
+              "steel-wing",
+              "aerial-ace"
+            ],
+            "ability": "keen-eye"
+          },
+          {
+            "pokemon": "altaria",
+            "level": 33,
+            "moves": [
+              "earthquake",
+              "dragon-breath",
+              "dragon-dance",
+              "aerial-ace"
+            ],
+            "ability": "natural-cure",
+            "heldItem": "oran-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          25,
+          74,
+          81,
+          220
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo flying.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "hoenn-7",
+        "order": 7,
+        "trainer": "Tate & Liza",
+        "title": "Líder de Ginásio",
+        "specialty": "psychic",
+        "location": "Mossdeep",
+        "badge": "Insígnia de Mossdeep",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          40,
+          43
+        ],
+        "description": "Tate & Liza usa uma estratégia centrada no tipo psychic. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#e26786",
+        "party": [
+          {
+            "pokemon": "claydol",
+            "level": 41,
+            "moves": [
+              "earthquake",
+              "ancient-power",
+              "psychic",
+              "light-screen"
+            ],
+            "ability": "levitate"
+          },
+          {
+            "pokemon": "xatu",
+            "level": 41,
+            "moves": [
+              "psychic",
+              "sunny-day",
+              "confuse-ray",
+              "calm-mind"
+            ],
+            "ability": "synchronize"
+          },
+          {
+            "pokemon": "lunatone",
+            "level": 42,
+            "moves": [
+              "light-screen",
+              "psychic",
+              "hypnosis",
+              "calm-mind"
+            ],
+            "ability": "levitate",
+            "heldItem": "sitrus-berry"
+          },
+          {
+            "pokemon": "solrock",
+            "level": 42,
+            "moves": [
+              "sunny-day",
+              "solar-beam",
+              "psychic",
+              "flamethrower"
+            ],
+            "ability": "levitate",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          92,
+          123,
+          127,
+          198
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo psychic.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "hoenn-8",
+        "order": 8,
+        "trainer": "Juan",
+        "title": "Líder de Ginásio",
+        "specialty": "water",
+        "location": "Sootopolis",
+        "badge": "Insígnia de Sootopolis",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          44,
+          47
+        ],
+        "description": "Juan usa uma estratégia centrada no tipo water. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#3b8bd5",
+        "party": [
+          {
+            "pokemon": "luvdisc",
+            "level": 41,
+            "moves": [
+              "water-pulse",
+              "attract",
+              "sweet-kiss",
+              "flail"
+            ],
+            "ability": "swift-swim"
+          },
+          {
+            "pokemon": "whiscash",
+            "level": 41,
+            "moves": [
+              "rain-dance",
+              "water-pulse",
+              "amnesia",
+              "earthquake"
+            ],
+            "ability": "oblivious"
+          },
+          {
+            "pokemon": "sealeo",
+            "level": 43,
+            "moves": [
+              "encore",
+              "body-slam",
+              "aurora-beam",
+              "water-pulse"
+            ],
+            "ability": "thick-fat"
+          },
+          {
+            "pokemon": "crawdaunt",
+            "level": 43,
+            "moves": [
+              "water-pulse",
+              "crabhammer",
+              "taunt",
+              "leer"
+            ],
+            "ability": "hyper-cutter"
+          },
+          {
+            "pokemon": "kingdra",
+            "level": 46,
+            "moves": [
+              "water-pulse",
+              "double-team",
+              "ice-beam",
+              "rest"
+            ],
+            "ability": "swift-swim",
+            "heldItem": "chesto-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          25,
+          43,
+          69,
+          315
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo water.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sinnoh",
+    "name": "Sinnoh",
+    "game": "Platinum",
+    "source": "domtronn/nuzlocke.data: leagues/plat.txt",
+    "battles": [
+      {
+        "id": "sinnoh-1",
+        "order": 1,
+        "trainer": "Roark",
+        "title": "Líder de Ginásio",
+        "specialty": "rock",
+        "location": "Oreburgh",
+        "badge": "Insígnia de Oreburgh",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          12,
+          15
+        ],
+        "description": "Roark usa uma estratégia centrada no tipo rock. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#9b8258",
+        "party": [
+          {
+            "pokemon": "geodude",
+            "level": 12,
+            "moves": [
+              "rock-throw",
+              "stealth-rock"
+            ],
+            "ability": "rock-head"
+          },
+          {
+            "pokemon": "onix",
+            "level": 12,
+            "moves": [
+              "rock-throw",
+              "screech",
+              "stealth-rock"
+            ],
+            "ability": "rock-head"
+          },
+          {
+            "pokemon": "cranidos",
+            "level": 14,
+            "moves": [
+              "headbutt",
+              "leer",
+              "pursuit"
+            ],
+            "ability": "mold-breaker"
+          }
+        ],
+        "recommendedPokemonIds": [
+          1,
+          7,
+          56,
+          60
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo rock.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "sinnoh-2",
+        "order": 2,
+        "trainer": "Gardenia",
+        "title": "Líder de Ginásio",
+        "specialty": "grass",
+        "location": "Eterna",
+        "badge": "Insígnia de Eterna",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          20,
+          23
+        ],
+        "description": "Gardenia usa uma estratégia centrada no tipo grass. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#47a95b",
+        "party": [
+          {
+            "pokemon": "turtwig",
+            "level": 20,
+            "moves": [
+              "razor-leaf",
+              "grass-knot",
+              "sunny-day",
+              "reflect"
+            ],
+            "ability": "overgrow"
+          },
+          {
+            "pokemon": "cherubi",
+            "level": 20,
+            "moves": [
+              "grass-knot",
+              "leech-seed",
+              "magical-leaf",
+              "safeguard"
+            ],
+            "ability": "flower-gift"
+          },
+          {
+            "pokemon": "roserade",
+            "level": 22,
+            "moves": [
+              "magical-leaf",
+              "grass-knot",
+              "stun-spore",
+              "poison-sting"
+            ],
+            "ability": "natural-cure",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          4,
+          16,
+          41,
+          58
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo grass.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "sinnoh-3",
+        "order": 3,
+        "trainer": "Fantina",
+        "title": "Líder de Ginásio",
+        "specialty": "ghost",
+        "location": "Hearthome",
+        "badge": "Insígnia de Hearthome",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          24,
+          27
+        ],
+        "description": "Fantina usa uma estratégia centrada no tipo ghost. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#665a9c",
+        "party": [
+          {
+            "pokemon": "duskull",
+            "level": 24,
+            "moves": [
+              "will-o-wisp",
+              "shadow-sneak",
+              "future-sight",
+              "pursuit"
+            ],
+            "ability": "levitate"
+          },
+          {
+            "pokemon": "haunter",
+            "level": 24,
+            "moves": [
+              "confuse-ray",
+              "shadow-claw",
+              "hypnosis",
+              "sucker-punch"
+            ],
+            "ability": "levitate"
+          },
+          {
+            "pokemon": "mismagius",
+            "level": 26,
+            "moves": [
+              "confuse-ray",
+              "shadow-ball",
+              "psybeam",
+              "magical-leaf"
+            ],
+            "ability": "levitate",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          19,
+          92,
+          198,
+          215
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo ghost.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "sinnoh-4",
+        "order": 4,
+        "trainer": "Maylene",
+        "title": "Líder de Ginásio",
+        "specialty": "fighting",
+        "location": "Veilstone",
+        "badge": "Insígnia de Veilstone",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          30,
+          33
+        ],
+        "description": "Maylene usa uma estratégia centrada no tipo fighting. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#c3455c",
+        "party": [
+          {
+            "pokemon": "meditite",
+            "level": 28,
+            "moves": [
+              "fake-out",
+              "rock-tomb",
+              "confusion",
+              "drain-punch"
+            ],
+            "ability": "pure-power"
+          },
+          {
+            "pokemon": "machoke",
+            "level": 29,
+            "moves": [
+              "strength",
+              "karate-chop",
+              "rock-tomb",
+              "focus-energy"
+            ],
+            "ability": "guts"
+          },
+          {
+            "pokemon": "lucario",
+            "level": 32,
+            "moves": [
+              "drain-punch",
+              "force-palm",
+              "metal-claw",
+              "bone-rush"
+            ],
+            "ability": "steadfast",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          16,
+          63,
+          92,
+          177
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo fighting.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "sinnoh-5",
+        "order": 5,
+        "trainer": "Crasher Wake",
+        "title": "Líder de Ginásio",
+        "specialty": "water",
+        "location": "Pastoria",
+        "badge": "Insígnia de Pastoria",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          35,
+          38
+        ],
+        "description": "Crasher Wake usa uma estratégia centrada no tipo water. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#3b8bd5",
+        "party": [
+          {
+            "pokemon": "gyarados",
+            "level": 33,
+            "moves": [
+              "brine",
+              "waterfall",
+              "twister",
+              "bite"
+            ],
+            "ability": "intimidate"
+          },
+          {
+            "pokemon": "quagsire",
+            "level": 34,
+            "moves": [
+              "rock-tomb",
+              "water-pulse",
+              "mud-shot",
+              "yawn"
+            ],
+            "ability": "damp"
+          },
+          {
+            "pokemon": "floatzel",
+            "level": 37,
+            "moves": [
+              "brine",
+              "ice-fang",
+              "crunch",
+              "aqua-jet"
+            ],
+            "ability": "swift-swim",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          25,
+          43,
+          69,
+          315
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo water.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "sinnoh-6",
+        "order": 6,
+        "trainer": "Byron",
+        "title": "Líder de Ginásio",
+        "specialty": "steel",
+        "location": "Canalave",
+        "badge": "Insígnia de Canalave",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          39,
+          42
+        ],
+        "description": "Byron usa uma estratégia centrada no tipo steel. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#658e9c",
+        "party": [
+          {
+            "pokemon": "magneton",
+            "level": 37,
+            "moves": [
+              "flash-cannon",
+              "metal-sound",
+              "thunderbolt",
+              "tri-attack"
+            ],
+            "ability": "magnet-pull"
+          },
+          {
+            "pokemon": "steelix",
+            "level": 38,
+            "moves": [
+              "earthquake",
+              "flash-cannon",
+              "sandstorm",
+              "ice-fang"
+            ],
+            "ability": "rock-head"
+          },
+          {
+            "pokemon": "bastiodon",
+            "level": 41,
+            "moves": [
+              "metal-burst",
+              "iron-defense",
+              "stone-edge",
+              "taunt"
+            ],
+            "ability": "sturdy",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          4,
+          50,
+          56,
+          58
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo steel.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "sinnoh-7",
+        "order": 7,
+        "trainer": "Candice",
+        "title": "Líder de Ginásio",
+        "specialty": "ice",
+        "location": "Snowpoint",
+        "badge": "Insígnia de Snowpoint",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          42,
+          45
+        ],
+        "description": "Candice usa uma estratégia centrada no tipo ice. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#5bb8c6",
+        "party": [
+          {
+            "pokemon": "piloswine",
+            "level": 38,
+            "moves": [
+              "earthquake",
+              "stone-edge",
+              "avalanche",
+              "hail"
+            ],
+            "ability": "oblivious"
+          },
+          {
+            "pokemon": "sneasel",
+            "level": 40,
+            "moves": [
+              "aerial-ace",
+              "feint-attack",
+              "ice-shard",
+              "slash"
+            ],
+            "ability": "inner-focus"
+          },
+          {
+            "pokemon": "abomasnow",
+            "level": 42,
+            "moves": [
+              "wood-hammer",
+              "focus-blast",
+              "avalanche",
+              "water-pulse"
+            ],
+            "ability": "snow-warning"
+          },
+          {
+            "pokemon": "froslass",
+            "level": 44,
+            "moves": [
+              "double-team",
+              "blizzard",
+              "shadow-ball",
+              "psychic"
+            ],
+            "ability": "snow-cloak",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          58,
+          66,
+          74,
+          81
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo ice.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "sinnoh-8",
+        "order": 8,
+        "trainer": "Volkner",
+        "title": "Líder de Ginásio",
+        "specialty": "electric",
+        "location": "Sunyshore",
+        "badge": "Insígnia de Sunyshore",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          48,
+          51
+        ],
+        "description": "Volkner usa uma estratégia centrada no tipo electric. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#e7b91e",
+        "party": [
+          {
+            "pokemon": "jolteon",
+            "level": 46,
+            "moves": [
+              "charge-beam",
+              "thunder-wave",
+              "iron-tail",
+              "quick-attack"
+            ],
+            "ability": "volt-absorb"
+          },
+          {
+            "pokemon": "raichu",
+            "level": 46,
+            "moves": [
+              "charge-beam",
+              "signal-beam",
+              "quick-attack",
+              "focus-blast"
+            ],
+            "ability": "static"
+          },
+          {
+            "pokemon": "luxray",
+            "level": 48,
+            "moves": [
+              "thunder-fang",
+              "fire-fang",
+              "ice-fang",
+              "crunch"
+            ],
+            "ability": "rivalry"
+          },
+          {
+            "pokemon": "electivire",
+            "level": 50,
+            "moves": [
+              "thunder-punch",
+              "fire-punch",
+              "giga-impact",
+              "quick-attack"
+            ],
+            "ability": "motor-drive",
+            "heldItem": "sitrus-berry"
+          }
+        ],
+        "recommendedPokemonIds": [
+          27,
+          50,
+          74,
+          328
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo electric.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "unova",
+    "name": "Unova",
+    "game": "Black / White",
+    "source": "domtronn/nuzlocke.data: leagues/bw.txt",
+    "battles": [
+      {
+        "id": "unova-1",
+        "order": 1,
+        "trainer": "Chili, Cress or Cilan",
+        "title": "Líder de Ginásio",
+        "specialty": "normal",
+        "location": "Striaton",
+        "badge": "Insígnia de Striaton",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          12,
+          15
+        ],
+        "description": "Chili, Cress or Cilan usa uma estratégia centrada no tipo normal. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#8b9299",
+        "party": [
+          {
+            "pokemon": "lillipup",
+            "level": 12,
+            "moves": [
+              "bite",
+              "work-up"
+            ],
+            "ability": "pickup"
+          },
+          {
+            "pokemon": "pansear",
+            "level": 14,
+            "moves": [
+              "incinerate",
+              "work-up"
+            ],
+            "ability": "gluttony"
+          },
+          {
+            "pokemon": "panpour",
+            "level": 14,
+            "moves": [
+              "water-gun",
+              "work-up"
+            ],
+            "ability": "gluttony"
+          },
+          {
+            "pokemon": "pansage",
+            "level": 14,
+            "moves": [
+              "vine-whip",
+              "work-up"
+            ],
+            "ability": "gluttony"
+          }
+        ],
+        "recommendedPokemonIds": [
+          56,
+          57,
+          66,
+          67
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo normal.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "unova-2",
+        "order": 2,
+        "trainer": "Lenora",
+        "title": "Líder de Ginásio",
+        "specialty": "normal",
+        "location": "Nacrene",
+        "badge": "Insígnia de Nacrene",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          18,
+          21
+        ],
+        "description": "Lenora usa uma estratégia centrada no tipo normal. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#8b9299",
+        "party": [
+          {
+            "pokemon": "herdier",
+            "level": 18,
+            "moves": [
+              "take-down",
+              "bite",
+              "retaliate",
+              "leer"
+            ],
+            "ability": "intimidate"
+          },
+          {
+            "pokemon": "watchog",
+            "level": 20,
+            "moves": [
+              "leer",
+              "crunch",
+              "retaliate",
+              "hypnosis"
+            ],
+            "ability": "illuminate"
+          }
+        ],
+        "recommendedPokemonIds": [
+          56,
+          57,
+          66,
+          67
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo normal.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "unova-3",
+        "order": 3,
+        "trainer": "Burgh",
+        "title": "Líder de Ginásio",
+        "specialty": "bug",
+        "location": "Castelia",
+        "badge": "Insígnia de Castelia",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          21,
+          24
+        ],
+        "description": "Burgh usa uma estratégia centrada no tipo bug. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#7fa33b",
+        "party": [
+          {
+            "pokemon": "whirlipede",
+            "level": 21,
+            "moves": [
+              "poison-tail",
+              "struggle-bug",
+              "screech",
+              "pursuit"
+            ],
+            "ability": "swarm"
+          },
+          {
+            "pokemon": "dwebble",
+            "level": 21,
+            "moves": [
+              "smack-down",
+              "struggle-bug",
+              "sand-attack",
+              "feint-attack"
+            ],
+            "ability": "shell-armor"
+          },
+          {
+            "pokemon": "leavanny",
+            "level": 23,
+            "moves": [
+              "razor-leaf",
+              "protect",
+              "string-shot",
+              "struggle-bug"
+            ],
+            "ability": "swarm"
+          }
+        ],
+        "recommendedPokemonIds": [
+          4,
+          16,
+          74,
+          228
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo bug.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "unova-4",
+        "order": 4,
+        "trainer": "Elesa",
+        "title": "Líder de Ginásio",
+        "specialty": "electric",
+        "location": "Nimbasa",
+        "badge": "Insígnia de Nimbasa",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          25,
+          28
+        ],
+        "description": "Elesa usa uma estratégia centrada no tipo electric. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#e7b91e",
+        "party": [
+          {
+            "pokemon": "emolga",
+            "level": 25,
+            "moves": [
+              "volt-switch",
+              "aerial-ace",
+              "pursuit",
+              "quick-attack"
+            ],
+            "ability": "static"
+          },
+          {
+            "pokemon": "emolga",
+            "level": 25,
+            "moves": [
+              "volt-switch",
+              "aerial-ace",
+              "pursuit",
+              "quick-attack"
+            ],
+            "ability": "static"
+          },
+          {
+            "pokemon": "zebstrika",
+            "level": 27,
+            "moves": [
+              "flame-charge",
+              "spark",
+              "volt-switch",
+              "quick-attack"
+            ],
+            "ability": "lightning-rod"
+          }
+        ],
+        "recommendedPokemonIds": [
+          27,
+          50,
+          74,
+          328
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo electric.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "unova-5",
+        "order": 5,
+        "trainer": "Clay",
+        "title": "Líder de Ginásio",
+        "specialty": "ground",
+        "location": "Driftveil",
+        "badge": "Insígnia de Driftveil",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          29,
+          32
+        ],
+        "description": "Clay usa uma estratégia centrada no tipo ground. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#a66a43",
+        "party": [
+          {
+            "pokemon": "krokorok",
+            "level": 29,
+            "moves": [
+              "swagger",
+              "crunch",
+              "bulldoze",
+              "torment"
+            ],
+            "ability": "moxie"
+          },
+          {
+            "pokemon": "palpitoad",
+            "level": 29,
+            "moves": [
+              "aqua-ring",
+              "bulldoze",
+              "muddy-water",
+              "bubble-beam"
+            ],
+            "ability": "swift-swim"
+          },
+          {
+            "pokemon": "excadrill",
+            "level": 31,
+            "moves": [
+              "hone-claws",
+              "slash",
+              "rock-slide",
+              "bulldoze"
+            ],
+            "ability": "sand-rush"
+          }
+        ],
+        "recommendedPokemonIds": [
+          7,
+          43,
+          60,
+          220
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo ground.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "unova-6",
+        "order": 6,
+        "trainer": "Skyla",
+        "title": "Líder de Ginásio",
+        "specialty": "flying",
+        "location": "Mistralton",
+        "badge": "Insígnia de Mistralton",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          33,
+          36
+        ],
+        "description": "Skyla usa uma estratégia centrada no tipo flying. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#6f91ce",
+        "party": [
+          {
+            "pokemon": "swoobat",
+            "level": 33,
+            "moves": [
+              "amnesia",
+              "heart-stamp",
+              "acrobatics",
+              "assurance"
+            ],
+            "ability": "unaware"
+          },
+          {
+            "pokemon": "unfezant",
+            "level": 33,
+            "moves": [
+              "quick-attack",
+              "razor-wind",
+              "air-slash",
+              "leer"
+            ],
+            "ability": "big-pecks"
+          },
+          {
+            "pokemon": "swanna",
+            "level": 35,
+            "moves": [
+              "aqua-ring",
+              "aerial-ace",
+              "air-slash",
+              "bubble-beam"
+            ],
+            "ability": "keen-eye"
+          }
+        ],
+        "recommendedPokemonIds": [
+          25,
+          74,
+          81,
+          220
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo flying.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "unova-7",
+        "order": 7,
+        "trainer": "Brycen",
+        "title": "Líder de Ginásio",
+        "specialty": "ice",
+        "location": "Icirrus",
+        "badge": "Insígnia de Icirrus",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          37,
+          40
+        ],
+        "description": "Brycen usa uma estratégia centrada no tipo ice. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#5bb8c6",
+        "party": [
+          {
+            "pokemon": "vanillish",
+            "level": 37,
+            "moves": [
+              "frost-breath",
+              "acid-armor",
+              "astonish",
+              "mirror-shot"
+            ],
+            "ability": "ice-body"
+          },
+          {
+            "pokemon": "beartic",
+            "level": 39,
+            "moves": [
+              "swagger",
+              "icicle-crash",
+              "slash",
+              "brine"
+            ],
+            "ability": "snow-cloak"
+          },
+          {
+            "pokemon": "cryogonal",
+            "level": 37,
+            "moves": [
+              "aurora-beam",
+              "reflect",
+              "frost-breath",
+              "rapid-spin"
+            ],
+            "ability": "levitate"
+          }
+        ],
+        "recommendedPokemonIds": [
+          58,
+          66,
+          74,
+          81
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo ice.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "unova-8a",
+        "order": 8,
+        "trainer": "Drayden",
+        "title": "Líder de Ginásio",
+        "specialty": "dragon",
+        "location": "Opelucid",
+        "badge": "Insígnia de Opelucid",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          41,
+          44
+        ],
+        "description": "Drayden usa uma estratégia centrada no tipo dragon. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#526bc2",
+        "party": [
+          {
+            "pokemon": "fraxure",
+            "level": 41,
+            "moves": [
+              "dragon-tail",
+              "dragon-dance",
+              "assurance",
+              "dragon-rage"
+            ],
+            "ability": "rivalry"
+          },
+          {
+            "pokemon": "druddigon",
+            "level": 41,
+            "moves": [
+              "night-slash",
+              "revenge",
+              "dragon-tail",
+              "chip-away"
+            ],
+            "ability": "rough-skin"
+          },
+          {
+            "pokemon": "haxorus",
+            "level": 43,
+            "moves": [
+              "dragon-tail",
+              "dragon-dance",
+              "slash",
+              "assurance"
+            ],
+            "ability": "mold-breaker"
+          }
+        ],
+        "recommendedPokemonIds": [
+          35,
+          124,
+          220,
+          333
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo dragon.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "unova-8b",
+        "order": 8,
+        "trainer": "Iris",
+        "title": "Líder de Ginásio",
+        "specialty": "dragon",
+        "location": "Opelucid",
+        "badge": "Insígnia de Opelucid",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          41,
+          44
+        ],
+        "description": "Iris usa uma estratégia centrada no tipo dragon. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#526bc2",
+        "party": [
+          {
+            "pokemon": "fraxure",
+            "level": 41,
+            "moves": [
+              "dragon-tail",
+              "dragon-dance",
+              "assurance",
+              "dragon-rage"
+            ],
+            "ability": "rivalry"
+          },
+          {
+            "pokemon": "druddigon",
+            "level": 41,
+            "moves": [
+              "night-slash",
+              "revenge",
+              "dragon-tail",
+              "chip-away"
+            ],
+            "ability": "rough-skin"
+          },
+          {
+            "pokemon": "haxorus",
+            "level": 43,
+            "moves": [
+              "dragon-tail",
+              "dragon-dance",
+              "slash",
+              "assurance"
+            ],
+            "ability": "mold-breaker"
+          }
+        ],
+        "recommendedPokemonIds": [
+          35,
+          124,
+          220,
+          333
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo dragon.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "unova-e1",
+        "order": 1,
+        "trainer": "Shauntal",
+        "title": "Líder de Ginásio",
+        "specialty": "ghost",
+        "location": "Striaton",
+        "badge": "Insígnia de Striaton",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          48,
+          51
+        ],
+        "description": "Shauntal usa uma estratégia centrada no tipo ghost. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#665a9c",
+        "party": [
+          {
+            "pokemon": "cofagrigus",
+            "level": 48,
+            "moves": [
+              "psychic",
+              "will-o-wisp",
+              "shadow-ball",
+              "grass-knot"
+            ],
+            "ability": "mummy"
+          },
+          {
+            "pokemon": "jellicent-male",
+            "level": 48,
+            "moves": [
+              "shadow-ball",
+              "surf",
+              "energy-ball",
+              "brine"
+            ],
+            "ability": "cursed-body"
+          },
+          {
+            "pokemon": "golurk",
+            "level": 48,
+            "moves": [
+              "curse",
+              "brick-break",
+              "earthquake",
+              "shadow-punch"
+            ],
+            "ability": "iron-fist"
+          },
+          {
+            "pokemon": "chandelure",
+            "level": 50,
+            "moves": [
+              "fire-blast",
+              "psychic",
+              "shadow-ball",
+              "payback"
+            ],
+            "ability": "flame-body"
+          }
+        ],
+        "recommendedPokemonIds": [
+          19,
+          92,
+          198,
+          215
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo ghost.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "unova-e2",
+        "order": 2,
+        "trainer": "Grimsley",
+        "title": "Líder de Ginásio",
+        "specialty": "dark",
+        "location": "Nacrene",
+        "badge": "Insígnia de Nacrene",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          48,
+          51
+        ],
+        "description": "Grimsley usa uma estratégia centrada no tipo dark. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#5c5363",
+        "party": [
+          {
+            "pokemon": "scrafty",
+            "level": 48,
+            "moves": [
+              "sand-attack",
+              "crunch",
+              "poison-jab",
+              "brick-break"
+            ],
+            "ability": "moxie"
+          },
+          {
+            "pokemon": "krookodile",
+            "level": 48,
+            "moves": [
+              "crunch",
+              "dragon-claw",
+              "foul-play",
+              "earthquake"
+            ],
+            "ability": "intimidate"
+          },
+          {
+            "pokemon": "liepard",
+            "level": 48,
+            "moves": [
+              "fake-out",
+              "attract",
+              "aerial-ace",
+              "night-slash"
+            ],
+            "ability": "limber"
+          },
+          {
+            "pokemon": "bisharp",
+            "level": 50,
+            "moves": [
+              "x-scissor",
+              "night-slash",
+              "metal-claw",
+              "aerial-ace"
+            ],
+            "ability": "defiant"
+          }
+        ],
+        "recommendedPokemonIds": [
+          35,
+          56,
+          123,
+          280
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo dark.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "unova-e3",
+        "order": 3,
+        "trainer": "Caitlin",
+        "title": "Líder de Ginásio",
+        "specialty": "psychic",
+        "location": "Castelia",
+        "badge": "Insígnia de Castelia",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          48,
+          51
+        ],
+        "description": "Caitlin usa uma estratégia centrada no tipo psychic. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#e26786",
+        "party": [
+          {
+            "pokemon": "reuniclus",
+            "level": 48,
+            "moves": [
+              "energy-ball",
+              "thunder",
+              "focus-blast",
+              "psychic"
+            ],
+            "ability": "magic-guard"
+          },
+          {
+            "pokemon": "sigilyph",
+            "level": 48,
+            "moves": [
+              "air-slash",
+              "shadow-ball",
+              "ice-beam",
+              "psychic"
+            ],
+            "ability": "wonder-skin"
+          },
+          {
+            "pokemon": "musharna",
+            "level": 48,
+            "moves": [
+              "shadow-ball",
+              "psychic",
+              "charge-beam",
+              "reflect"
+            ],
+            "ability": "synchronize"
+          },
+          {
+            "pokemon": "gothitelle",
+            "level": 50,
+            "moves": [
+              "calm-mind",
+              "thunderbolt",
+              "psychic",
+              "shadow-ball"
+            ],
+            "ability": "frisk"
+          }
+        ],
+        "recommendedPokemonIds": [
+          92,
+          123,
+          127,
+          198
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo psychic.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "unova-e4",
+        "order": 4,
+        "trainer": "Marshal",
+        "title": "Líder de Ginásio",
+        "specialty": "fighting",
+        "location": "Nimbasa",
+        "badge": "Insígnia de Nimbasa",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          48,
+          51
+        ],
+        "description": "Marshal usa uma estratégia centrada no tipo fighting. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#c3455c",
+        "party": [
+          {
+            "pokemon": "throh",
+            "level": 48,
+            "moves": [
+              "stone-edge",
+              "payback",
+              "bulldoze",
+              "storm-throw"
+            ],
+            "ability": "guts"
+          },
+          {
+            "pokemon": "sawk",
+            "level": 48,
+            "moves": [
+              "stone-edge",
+              "karate-chop",
+              "grass-knot",
+              "retaliate"
+            ],
+            "ability": "sturdy"
+          },
+          {
+            "pokemon": "conkeldurr",
+            "level": 48,
+            "moves": [
+              "stone-edge",
+              "hammer-arm",
+              "retaliate",
+              "grass-knot"
+            ],
+            "ability": "sheer-force"
+          },
+          {
+            "pokemon": "mienshao",
+            "level": 50,
+            "moves": [
+              "u-turn",
+              "jump-kick",
+              "rock-slide",
+              "retaliate"
+            ],
+            "ability": "inner-focus"
+          }
+        ],
+        "recommendedPokemonIds": [
+          16,
+          63,
+          92,
+          177
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo fighting.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kalos",
+    "name": "Kalos",
+    "game": "X / Y",
+    "source": "domtronn/nuzlocke.data: leagues/xy.txt",
+    "battles": [
+      {
+        "id": "kalos-1",
+        "order": 1,
+        "trainer": "Viola",
+        "title": "Líder de Ginásio",
+        "specialty": "bug",
+        "location": "Santalune",
+        "badge": "Insígnia de Santalune",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          10,
+          13
+        ],
+        "description": "Viola usa uma estratégia centrada no tipo bug. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#7fa33b",
+        "party": [
+          {
+            "pokemon": "surskit",
+            "level": 10,
+            "moves": [
+              "quick-attack",
+              "bubble",
+              "water-sport"
+            ],
+            "ability": "swift-swim"
+          },
+          {
+            "pokemon": "vivillon",
+            "level": 12,
+            "moves": [
+              "infestation",
+              "harden",
+              "tackle"
+            ],
+            "ability": "shield-dust"
+          }
+        ],
+        "recommendedPokemonIds": [
+          4,
+          16,
+          74,
+          228
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo bug.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "kalos-2",
+        "order": 2,
+        "trainer": "Grant",
+        "title": "Líder de Ginásio",
+        "specialty": "rock",
+        "location": "Cyllage",
+        "badge": "Insígnia de Cyllage",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          23,
+          26
+        ],
+        "description": "Grant usa uma estratégia centrada no tipo rock. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#9b8258",
+        "party": [
+          {
+            "pokemon": "amaura",
+            "level": 25,
+            "moves": [
+              "aurora-beam",
+              "rock-tomb",
+              "thunder-wave",
+              "take-down"
+            ],
+            "ability": "refrigerate"
+          },
+          {
+            "pokemon": "tyrunt",
+            "level": 25,
+            "moves": [
+              "rock-tomb",
+              "bite",
+              "stomp"
+            ],
+            "ability": "strong-jaw"
+          }
+        ],
+        "recommendedPokemonIds": [
+          1,
+          7,
+          56,
+          60
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo rock.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "kalos-3",
+        "order": 3,
+        "trainer": "Korrina",
+        "title": "Líder de Ginásio",
+        "specialty": "fighting",
+        "location": "Shalour",
+        "badge": "Insígnia de Shalour",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          30,
+          33
+        ],
+        "description": "Korrina usa uma estratégia centrada no tipo fighting. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#c3455c",
+        "party": [
+          {
+            "pokemon": "mienfoo",
+            "level": 29,
+            "moves": [
+              "power-up-punch",
+              "fake-out",
+              "double-slap"
+            ],
+            "ability": "inner-focus"
+          },
+          {
+            "pokemon": "machoke",
+            "level": 28,
+            "moves": [
+              "power-up-punch",
+              "rock-tomb",
+              "leer"
+            ],
+            "ability": "guts"
+          },
+          {
+            "pokemon": "hawlucha",
+            "level": 32,
+            "moves": [
+              "flying-press",
+              "hone-claws",
+              "power-up-punch"
+            ],
+            "ability": "unburden"
+          }
+        ],
+        "recommendedPokemonIds": [
+          16,
+          63,
+          92,
+          177
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo fighting.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "kalos-4",
+        "order": 4,
+        "trainer": "Ramos",
+        "title": "Líder de Ginásio",
+        "specialty": "grass",
+        "location": "Coumarine",
+        "badge": "Insígnia de Coumarine",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          32,
+          35
+        ],
+        "description": "Ramos usa uma estratégia centrada no tipo grass. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#47a95b",
+        "party": [
+          {
+            "pokemon": "jumpluff",
+            "level": 30,
+            "moves": [
+              "grass-knot",
+              "acrobatics",
+              "leech-seed"
+            ],
+            "ability": "chlorophyll"
+          },
+          {
+            "pokemon": "weepinbell",
+            "level": 31,
+            "moves": [
+              "grass-knot",
+              "acid",
+              "poison-powder",
+              "gastro-acid"
+            ],
+            "ability": "chlorophyll"
+          },
+          {
+            "pokemon": "gogoat",
+            "level": 34,
+            "moves": [
+              "grass-knot",
+              "bulldoze",
+              "take-down"
+            ],
+            "ability": "sap-sipper"
+          }
+        ],
+        "recommendedPokemonIds": [
+          4,
+          16,
+          41,
+          58
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo grass.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "kalos-5",
+        "order": 5,
+        "trainer": "Clemont",
+        "title": "Líder de Ginásio",
+        "specialty": "electric",
+        "location": "Lumiose",
+        "badge": "Insígnia de Lumiose",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          35,
+          38
+        ],
+        "description": "Clemont usa uma estratégia centrada no tipo electric. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#e7b91e",
+        "party": [
+          {
+            "pokemon": "emolga",
+            "level": 35,
+            "moves": [
+              "volt-switch",
+              "quick-attack",
+              "aerial-ace"
+            ],
+            "ability": "static"
+          },
+          {
+            "pokemon": "magneton",
+            "level": 35,
+            "moves": [
+              "thunderbolt",
+              "electric-terrain",
+              "mirror-shot"
+            ],
+            "ability": "sturdy"
+          },
+          {
+            "pokemon": "heliolisk",
+            "level": 37,
+            "moves": [
+              "thunderbolt",
+              "quick-attack",
+              "grass-knot"
+            ],
+            "ability": "dry-skin"
+          }
+        ],
+        "recommendedPokemonIds": [
+          27,
+          50,
+          74,
+          328
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo electric.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "kalos-6",
+        "order": 6,
+        "trainer": "Valerie",
+        "title": "Líder de Ginásio",
+        "specialty": "fairy",
+        "location": "Laverre",
+        "badge": "Insígnia de Laverre",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          40,
+          43
+        ],
+        "description": "Valerie usa uma estratégia centrada no tipo fairy. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#d77bc1",
+        "party": [
+          {
+            "pokemon": "mawile",
+            "level": 38,
+            "moves": [
+              "feint-attack",
+              "crunch",
+              "iron-defense"
+            ],
+            "ability": "hyper-cutter"
+          },
+          {
+            "pokemon": "mr-mime",
+            "level": 39,
+            "moves": [
+              "light-screen",
+              "reflect",
+              "psychic",
+              "dazzling-gleam"
+            ],
+            "ability": "soundproof"
+          },
+          {
+            "pokemon": "sylveon",
+            "level": 42,
+            "moves": [
+              "dazzling-gleam",
+              "charm",
+              "quick-attack",
+              "swift"
+            ],
+            "ability": "cute-charm"
+          }
+        ],
+        "recommendedPokemonIds": [
+          23,
+          41,
+          81,
+          109
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo fairy.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "kalos-7",
+        "order": 7,
+        "trainer": "Olympia",
+        "title": "Líder de Ginásio",
+        "specialty": "psychic",
+        "location": "Anistar",
+        "badge": "Insígnia de Anistar",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          46,
+          49
+        ],
+        "description": "Olympia usa uma estratégia centrada no tipo psychic. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#e26786",
+        "party": [
+          {
+            "pokemon": "sigilyph",
+            "level": 44,
+            "moves": [
+              "air-slash",
+              "psychic",
+              "light-screen",
+              "reflect"
+            ],
+            "ability": "magic-guard"
+          },
+          {
+            "pokemon": "slowking",
+            "level": 45,
+            "moves": [
+              "psychic",
+              "calm-mind",
+              "power-gem",
+              "yawn"
+            ],
+            "ability": "oblivious"
+          },
+          {
+            "pokemon": "meowstic-female",
+            "level": 48,
+            "moves": [
+              "psychic",
+              "calm-mind",
+              "fake-out",
+              "shadow-ball"
+            ],
+            "ability": "infiltrator"
+          }
+        ],
+        "recommendedPokemonIds": [
+          92,
+          123,
+          127,
+          198
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo psychic.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "kalos-8",
+        "order": 8,
+        "trainer": "Wulfric",
+        "title": "Líder de Ginásio",
+        "specialty": "ice",
+        "location": "Snowbelle",
+        "badge": "Insígnia de Snowbelle",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          57,
+          60
+        ],
+        "description": "Wulfric usa uma estratégia centrada no tipo ice. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#5bb8c6",
+        "party": [
+          {
+            "pokemon": "abomasnow",
+            "level": 56,
+            "moves": [
+              "ice-beam",
+              "ice-shard",
+              "energy-ball"
+            ],
+            "ability": "snow-warning"
+          },
+          {
+            "pokemon": "cryogonal",
+            "level": 55,
+            "moves": [
+              "ice-beam",
+              "hail",
+              "confuse-ray",
+              "flash-cannon"
+            ],
+            "ability": "levitate"
+          },
+          {
+            "pokemon": "avalugg",
+            "level": 59,
+            "moves": [
+              "avalanche",
+              "crunch",
+              "curse",
+              "gyro-ball"
+            ],
+            "ability": "ice-body"
+          }
+        ],
+        "recommendedPokemonIds": [
+          58,
+          66,
+          74,
+          81
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo ice.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "alola",
+    "name": "Alola",
+    "game": "Sun / Moon",
+    "source": "domtronn/nuzlocke.data: leagues/sm.txt",
+    "battles": [
+      {
+        "id": "alola-1",
+        "order": 1,
+        "trainer": "Ilima",
+        "title": "Prova / Kahuna",
+        "specialty": "normal",
+        "location": "Melemele",
+        "badge": "Progresso da Prova",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          8,
+          11
+        ],
+        "description": "Ilima usa uma estratégia centrada no tipo normal. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#8b9299",
+        "party": [
+          {
+            "pokemon": "yungoos",
+            "level": 9,
+            "moves": [
+              "tackle",
+              "pursuit",
+              "leer"
+            ],
+            "ability": "strong-jaw"
+          },
+          {
+            "pokemon": "smeargle",
+            "level": 10,
+            "moves": [
+              "ember",
+              "tackle"
+            ],
+            "ability": "technician"
+          },
+          {
+            "pokemon": "smeargle",
+            "level": 10,
+            "moves": [
+              "water-gun",
+              "tackle"
+            ],
+            "ability": "technician"
+          },
+          {
+            "pokemon": "smeargle",
+            "level": 10,
+            "moves": [
+              "leafage",
+              "tackle"
+            ],
+            "ability": "technician"
+          }
+        ],
+        "recommendedPokemonIds": [
+          56,
+          57,
+          66,
+          67
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo normal.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "alola-1_2",
+        "order": 1,
+        "trainer": "Ilima (Optional)",
+        "title": "Prova / Kahuna",
+        "specialty": "normal",
+        "location": "Melemele",
+        "badge": "Progresso da Prova",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          13,
+          16
+        ],
+        "description": "Ilima (Optional) usa uma estratégia centrada no tipo normal. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#8b9299",
+        "party": [
+          {
+            "pokemon": "gumshoos",
+            "level": 15,
+            "moves": [
+              "tackle",
+              "pursuit",
+              "leer"
+            ],
+            "ability": "strong-jaw",
+            "heldItem": "normalium-z--held"
+          },
+          {
+            "pokemon": "smeargle",
+            "level": 14,
+            "moves": [
+              "ember",
+              "water-gun",
+              "leafage",
+              "tackle"
+            ],
+            "ability": "technician"
+          }
+        ],
+        "recommendedPokemonIds": [
+          56,
+          57,
+          66,
+          67
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo normal.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "alola-1a",
+        "order": 1,
+        "trainer": "Ilima's trial",
+        "title": "Prova / Kahuna",
+        "specialty": "normal",
+        "location": "Melemele",
+        "badge": "Progresso da Prova",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          10,
+          13
+        ],
+        "description": "Ilima's trial usa uma estratégia centrada no tipo normal. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#8b9299",
+        "party": [
+          {
+            "pokemon": "gumshoos",
+            "level": 12,
+            "moves": [
+              "super-fang",
+              "bite",
+              "scary-face",
+              "leer"
+            ],
+            "ability": "adaptability",
+            "heldItem": "pecha-berry"
+          },
+          {
+            "pokemon": "yungoos",
+            "level": 10,
+            "moves": [
+              "leer",
+              "tackle",
+              "bide",
+              "pursuit"
+            ],
+            "ability": "stakeout"
+          }
+        ],
+        "recommendedPokemonIds": [
+          56,
+          57,
+          66,
+          67
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo normal.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "alola-1b",
+        "order": 1,
+        "trainer": "Ilima's trial",
+        "title": "Prova / Kahuna",
+        "specialty": "normal",
+        "location": "Melemele",
+        "badge": "Progresso da Prova",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          10,
+          13
+        ],
+        "description": "Ilima's trial usa uma estratégia centrada no tipo normal. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#8b9299",
+        "party": [
+          {
+            "pokemon": "raticate-alola",
+            "level": 12,
+            "moves": [
+              "focus-energy",
+              "tail-whip",
+              "super-fang",
+              "tackle"
+            ],
+            "ability": "gluttony",
+            "heldItem": "pecha-berry"
+          },
+          {
+            "pokemon": "rattata-alola",
+            "level": 10,
+            "moves": [
+              "tackle",
+              "focus-energy",
+              "quick-attack",
+              "tail-whip"
+            ],
+            "ability": "hustle"
+          }
+        ],
+        "recommendedPokemonIds": [
+          56,
+          57,
+          66,
+          67
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo normal.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "alola-2",
+        "order": 2,
+        "trainer": "Island Kahuna Hala",
+        "title": "Prova / Kahuna",
+        "specialty": "fighting",
+        "location": "Akala",
+        "badge": "Progresso da Prova",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          13,
+          16
+        ],
+        "description": "Island Kahuna Hala usa uma estratégia centrada no tipo fighting. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#c3455c",
+        "party": [
+          {
+            "pokemon": "mankey",
+            "level": 14,
+            "moves": [
+              "karate-chop",
+              "focus-energy",
+              "pursuit"
+            ],
+            "ability": "anger-point"
+          },
+          {
+            "pokemon": "makuhita",
+            "level": 14,
+            "moves": [
+              "fake-out",
+              "sand-attack",
+              "arm-thrust"
+            ],
+            "ability": "thick-fat"
+          },
+          {
+            "pokemon": "crabrawler",
+            "level": 15,
+            "moves": [
+              "power-up-punch",
+              "pursuit",
+              "leer"
+            ],
+            "ability": "iron-fist",
+            "heldItem": "fightinium-z--held"
+          }
+        ],
+        "recommendedPokemonIds": [
+          16,
+          63,
+          92,
+          177
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo fighting.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "alola-3",
+        "order": 3,
+        "trainer": "Lana's trial",
+        "title": "Prova / Kahuna",
+        "specialty": "water",
+        "location": "Akala",
+        "badge": "Progresso da Prova",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          18,
+          21
+        ],
+        "description": "Lana's trial usa uma estratégia centrada no tipo water. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#3b8bd5",
+        "party": [
+          {
+            "pokemon": "wishiwashi-school",
+            "level": 20,
+            "moves": [
+              "water-gun",
+              "rain-dance",
+              "soak",
+              "growl"
+            ],
+            "ability": "schooling",
+            "heldItem": "sitrus-berry"
+          },
+          {
+            "pokemon": "wishiwashi-solo",
+            "level": 18,
+            "moves": [
+              "helping-hand",
+              "feint-attack",
+              "brine",
+              "aqua-ring"
+            ],
+            "ability": "schooling"
+          },
+          {
+            "pokemon": "alomomola",
+            "level": 18,
+            "moves": [
+              "helping-hand",
+              "double-slap",
+              "heal-pulse",
+              "water-gun"
+            ],
+            "ability": "healer"
+          }
+        ],
+        "recommendedPokemonIds": [
+          25,
+          43,
+          69,
+          315
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo water.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "alola-4",
+        "order": 4,
+        "trainer": "Kiawe's trial",
+        "title": "Prova / Kahuna",
+        "specialty": "fire",
+        "location": "Ula’ula",
+        "badge": "Progresso da Prova",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          20,
+          23
+        ],
+        "description": "Kiawe's trial usa uma estratégia centrada no tipo fire. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#e05b38",
+        "party": [
+          {
+            "pokemon": "salazzle",
+            "level": 22,
+            "moves": [
+              "torment",
+              "flame-burst",
+              "venom-drench",
+              "toxic"
+            ],
+            "ability": "schooling",
+            "heldItem": "petaya-berry"
+          },
+          {
+            "pokemon": "salandit",
+            "level": 20,
+            "moves": [
+              "poison-gas",
+              "venoshock",
+              "taunt",
+              "scratch"
+            ],
+            "ability": "corrosion"
+          }
+        ],
+        "recommendedPokemonIds": [
+          7,
+          54,
+          74,
+          194
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo fire.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "alola-6",
+        "order": 6,
+        "trainer": "Mallow's Trial",
+        "title": "Prova / Kahuna",
+        "specialty": "grass",
+        "location": "Poni",
+        "badge": "Progresso da Prova",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          22,
+          25
+        ],
+        "description": "Mallow's Trial usa uma estratégia centrada no tipo grass. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#47a95b",
+        "party": [
+          {
+            "pokemon": "lurantis",
+            "level": 24,
+            "moves": [
+              "razor-leaf",
+              "x-scissor",
+              "solar-blade",
+              "synthesis"
+            ],
+            "ability": "leaf-guard",
+            "heldItem": "power-herb"
+          },
+          {
+            "pokemon": "trumbeak",
+            "level": 22,
+            "moves": [
+              "rock-blast",
+              "pluck",
+              "supersonic",
+              "screech"
+            ],
+            "ability": "keen-eye"
+          },
+          {
+            "pokemon": "castform",
+            "level": 22,
+            "moves": [
+              "sunny-day",
+              "water-gun",
+              "headbutt",
+              "weather-ball"
+            ],
+            "ability": "forecast"
+          }
+        ],
+        "recommendedPokemonIds": [
+          4,
+          16,
+          41,
+          58
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo grass.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "alola-7",
+        "order": 7,
+        "trainer": "Island Kahuna Olivia",
+        "title": "Prova / Kahuna",
+        "specialty": "rock",
+        "location": "Monte Lanakila",
+        "badge": "Progresso da Prova",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          24,
+          27
+        ],
+        "description": "Island Kahuna Olivia usa uma estratégia centrada no tipo rock. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#9b8258",
+        "party": [
+          {
+            "pokemon": "nosepass",
+            "level": 25,
+            "moves": [
+              "rock-slide",
+              "spark",
+              "thunder-wave"
+            ],
+            "ability": "sturdy"
+          },
+          {
+            "pokemon": "boldore",
+            "level": 26,
+            "moves": [
+              "rock-blast",
+              "mud-slap",
+              "headbutt"
+            ],
+            "ability": "sturdy"
+          },
+          {
+            "pokemon": "lycanroc-midnight",
+            "level": 26,
+            "moves": [
+              "bite",
+              "rock-throw"
+            ],
+            "ability": "vital-spirit",
+            "heldItem": "rockium-z--held"
+          }
+        ],
+        "recommendedPokemonIds": [
+          1,
+          7,
+          56,
+          60
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo rock.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "alola-8",
+        "order": 8,
+        "trainer": "Sophocles' Trial",
+        "title": "Prova / Kahuna",
+        "specialty": "electric",
+        "location": "Monte Lanakila",
+        "badge": "Progresso da Prova",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          27,
+          30
+        ],
+        "description": "Sophocles' Trial usa uma estratégia centrada no tipo electric. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#e7b91e",
+        "party": [
+          {
+            "pokemon": "vikavolt",
+            "level": 29,
+            "moves": [
+              "vice-grip",
+              "charge",
+              "spark",
+              "bug-bite"
+            ],
+            "ability": "levitate",
+            "heldItem": "occa-berry"
+          },
+          {
+            "pokemon": "charjabug",
+            "level": 28,
+            "moves": [
+              "thunder-wave",
+              "string-shot",
+              "mud-slap",
+              "vice-grip"
+            ],
+            "ability": "battery"
+          },
+          {
+            "pokemon": "charjabug",
+            "level": 28,
+            "moves": [
+              "bite",
+              "thunder-wave",
+              "spark"
+            ],
+            "ability": "battery"
+          }
+        ],
+        "recommendedPokemonIds": [
+          27,
+          50,
+          74,
+          328
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo electric.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "alola-9",
+        "order": 9,
+        "trainer": "Acerola's Trial",
+        "title": "Prova / Kahuna",
+        "specialty": "ghost",
+        "location": "Monte Lanakila",
+        "badge": "Progresso da Prova",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          31,
+          34
+        ],
+        "description": "Acerola's Trial usa uma estratégia centrada no tipo ghost. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#665a9c",
+        "party": [
+          {
+            "pokemon": "mimikyu-disguised",
+            "level": 33,
+            "moves": [
+              "play-rough",
+              "shadow-claw",
+              "astonish",
+              "mimic"
+            ],
+            "ability": "disguise",
+            "heldItem": "lum-berry"
+          },
+          {
+            "pokemon": "haunter",
+            "level": 27,
+            "moves": [
+              "hypnosis",
+              "sucker-punch",
+              "night-shade",
+              "lick"
+            ],
+            "ability": "levitate"
+          },
+          {
+            "pokemon": "gengar",
+            "level": 27,
+            "moves": [
+              "shadow-ball",
+              "hypnosis",
+              "night-shade",
+              "shadow-punch"
+            ],
+            "ability": "cursed-body"
+          }
+        ],
+        "recommendedPokemonIds": [
+          19,
+          92,
+          198,
+          215
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo ghost.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "alola-10",
+        "order": 10,
+        "trainer": "Island Kahuna Nanu",
+        "title": "Prova / Kahuna",
+        "specialty": "dark",
+        "location": "Monte Lanakila",
+        "badge": "Progresso da Prova",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          37,
+          40
+        ],
+        "description": "Island Kahuna Nanu usa uma estratégia centrada no tipo dark. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#5c5363",
+        "party": [
+          {
+            "pokemon": "sableye",
+            "level": 38,
+            "moves": [
+              "power-gem",
+              "shadow-ball",
+              "fake-out"
+            ],
+            "ability": "keen-eye"
+          },
+          {
+            "pokemon": "krokorok",
+            "level": 38,
+            "moves": [
+              "crunch",
+              "assurance",
+              "swagger",
+              "earthquake"
+            ],
+            "ability": "intimidate"
+          },
+          {
+            "pokemon": "persian-alola",
+            "level": 39,
+            "moves": [
+              "power-gem",
+              "fake-out",
+              "dark-pulse"
+            ],
+            "ability": "fur-coat",
+            "heldItem": "darkinium-z--held"
+          }
+        ],
+        "recommendedPokemonIds": [
+          35,
+          56,
+          123,
+          280
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo dark.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "alola-11",
+        "order": 11,
+        "trainer": "Island Kahuna Hapu",
+        "title": "Prova / Kahuna",
+        "specialty": "ground",
+        "location": "Monte Lanakila",
+        "badge": "Progresso da Prova",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          46,
+          49
+        ],
+        "description": "Island Kahuna Hapu usa uma estratégia centrada no tipo ground. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#a66a43",
+        "party": [
+          {
+            "pokemon": "dugtrio-alola",
+            "level": 47,
+            "moves": [
+              "iron-head",
+              "earthquake",
+              "sucker-punch",
+              "sandstorm"
+            ],
+            "ability": "sand-veil"
+          },
+          {
+            "pokemon": "gastrodon",
+            "level": 47,
+            "moves": [
+              "muddy-water",
+              "mud-bomb",
+              "recover"
+            ],
+            "ability": "sticky-hold"
+          },
+          {
+            "pokemon": "flygon",
+            "level": 47,
+            "moves": [
+              "earth-power",
+              "dragon-breath"
+            ],
+            "ability": "levitate"
+          },
+          {
+            "pokemon": "mudsdale",
+            "level": 48,
+            "moves": [
+              "heavy-slam",
+              "earthquake",
+              "double-kick",
+              "counter"
+            ],
+            "ability": "stamina",
+            "heldItem": "groundium-z--held"
+          }
+        ],
+        "recommendedPokemonIds": [
+          7,
+          43,
+          60,
+          220
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo ground.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "alola-12",
+        "order": 12,
+        "trainer": "Kommo-o's Trial",
+        "title": "Prova / Kahuna",
+        "specialty": "dragon",
+        "location": "Monte Lanakila",
+        "badge": "Progresso da Prova",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          43,
+          46
+        ],
+        "description": "Kommo-o's Trial usa uma estratégia centrada no tipo dragon. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#526bc2",
+        "party": [
+          {
+            "pokemon": "kommo-o",
+            "level": 45,
+            "moves": [
+              "clanging-scales",
+              "sky-uppercut",
+              "flash-cannon",
+              "protect"
+            ],
+            "ability": "soundproof",
+            "heldItem": "mental-herb"
+          },
+          {
+            "pokemon": "hakamo-o",
+            "level": 32,
+            "moves": [
+              "sky-uppercut",
+              "autotomize",
+              "work-up",
+              "bide"
+            ],
+            "ability": "bulletproof"
+          },
+          {
+            "pokemon": "scizor",
+            "level": 32,
+            "moves": [
+              "metal-claw",
+              "pursuit",
+              "leer",
+              "fury-cutter"
+            ],
+            "ability": "technician"
+          }
+        ],
+        "recommendedPokemonIds": [
+          35,
+          124,
+          220,
+          333
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo dragon.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "galar",
+    "name": "Galar",
+    "game": "Sword / Shield",
+    "source": "domtronn/nuzlocke.data: leagues/swsh.txt",
+    "battles": [
+      {
+        "id": "galar-1",
+        "order": 1,
+        "trainer": "Milo",
+        "title": "Líder de Ginásio",
+        "specialty": "grass",
+        "location": "Turffield",
+        "badge": "Insígnia de Turffield",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          18,
+          21
+        ],
+        "description": "Milo usa uma estratégia centrada no tipo grass. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#47a95b",
+        "party": [
+          {
+            "pokemon": "gossifleur",
+            "level": 19,
+            "moves": [
+              "magical-leaf",
+              "round",
+              "rapid-spin"
+            ],
+            "ability": "regenerator"
+          },
+          {
+            "pokemon": "eldegoss",
+            "level": 20,
+            "moves": [
+              "magical-leaf",
+              "round",
+              "leafage"
+            ],
+            "ability": "regenerator"
+          }
+        ],
+        "recommendedPokemonIds": [
+          4,
+          16,
+          41,
+          58
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo grass.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "galar-2",
+        "order": 2,
+        "trainer": "Nessa",
+        "title": "Líder de Ginásio",
+        "specialty": "water",
+        "location": "Hulbury",
+        "badge": "Insígnia de Hulbury",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          22,
+          25
+        ],
+        "description": "Nessa usa uma estratégia centrada no tipo water. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#3b8bd5",
+        "party": [
+          {
+            "pokemon": "goldeen",
+            "level": 22,
+            "moves": [
+              "water-pulse",
+              "whirlpool",
+              "horn-attack",
+              "agility"
+            ],
+            "ability": "swift-swim"
+          },
+          {
+            "pokemon": "arrokuda",
+            "level": 23,
+            "moves": [
+              "aqua-jet",
+              "bite",
+              "whirlpool",
+              "fury-attack"
+            ],
+            "ability": "swift-swim"
+          },
+          {
+            "pokemon": "drednaw",
+            "level": 24,
+            "moves": [
+              "razor-shell",
+              "water-gun",
+              "bite",
+              "headbutt"
+            ],
+            "ability": "swift-swim"
+          }
+        ],
+        "recommendedPokemonIds": [
+          25,
+          43,
+          69,
+          315
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo water.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "galar-3",
+        "order": 3,
+        "trainer": "Kabu",
+        "title": "Líder de Ginásio",
+        "specialty": "fire",
+        "location": "Motostoke",
+        "badge": "Insígnia de Motostoke",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          25,
+          28
+        ],
+        "description": "Kabu usa uma estratégia centrada no tipo fire. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#e05b38",
+        "party": [
+          {
+            "pokemon": "ninetales",
+            "level": 25,
+            "moves": [
+              "will-o-wisp",
+              "fire-spin",
+              "quick-attack",
+              "ember"
+            ],
+            "ability": "flash-fire"
+          },
+          {
+            "pokemon": "arcanine",
+            "level": 25,
+            "moves": [
+              "will-o-wisp",
+              "flame-wheel",
+              "bite",
+              "agility"
+            ],
+            "ability": "intimidate"
+          },
+          {
+            "pokemon": "centiskorch",
+            "level": 27,
+            "moves": [
+              "flame-wheel",
+              "coil",
+              "bug-bite",
+              "smokescreen"
+            ],
+            "ability": "flash-fire"
+          }
+        ],
+        "recommendedPokemonIds": [
+          7,
+          54,
+          74,
+          194
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo fire.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "galar-5",
+        "order": 5,
+        "trainer": "Opal",
+        "title": "Líder de Ginásio",
+        "specialty": "fairy",
+        "location": "Ballonlea",
+        "badge": "Insígnia de Ballonlea",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          36,
+          39
+        ],
+        "description": "Opal usa uma estratégia centrada no tipo fairy. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#d77bc1",
+        "party": [
+          {
+            "pokemon": "weezing-galar",
+            "level": 36,
+            "moves": [
+              "sludge",
+              "fairy-wind",
+              "tackle"
+            ],
+            "ability": "levitate"
+          },
+          {
+            "pokemon": "mawile",
+            "level": 36,
+            "moves": [
+              "draining-kiss",
+              "crunch",
+              "iron-defense",
+              "astonish"
+            ],
+            "ability": "intimidate"
+          },
+          {
+            "pokemon": "togekiss",
+            "level": 37,
+            "moves": [
+              "air-slash",
+              "draining-kiss",
+              "ancient-power"
+            ],
+            "ability": "hustle"
+          },
+          {
+            "pokemon": "alcremie",
+            "level": 38,
+            "moves": [
+              "draining-kiss",
+              "acid-armor",
+              "sweet-kiss"
+            ],
+            "ability": "sweet-veil"
+          }
+        ],
+        "recommendedPokemonIds": [
+          23,
+          41,
+          81,
+          109
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo fairy.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "galar-7",
+        "order": 7,
+        "trainer": "Piers",
+        "title": "Líder de Ginásio",
+        "specialty": "dark",
+        "location": "Spikemuth",
+        "badge": "Insígnia de Spikemuth",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          44,
+          47
+        ],
+        "description": "Piers usa uma estratégia centrada no tipo dark. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#5c5363",
+        "party": [
+          {
+            "pokemon": "scrafty",
+            "level": 44,
+            "moves": [
+              "fake-out",
+              "sand-attack",
+              "brick-break",
+              "payback"
+            ],
+            "ability": "intimidate"
+          },
+          {
+            "pokemon": "malamar",
+            "level": 45,
+            "moves": [
+              "night-slash",
+              "foul-play",
+              "psycho-cut",
+              "payback"
+            ],
+            "ability": "contrary"
+          },
+          {
+            "pokemon": "skuntank",
+            "level": 45,
+            "moves": [
+              "sucker-punch",
+              "screech",
+              "toxic",
+              "snarl"
+            ],
+            "ability": "aftermath"
+          },
+          {
+            "pokemon": "obstagoon",
+            "level": 46,
+            "moves": [
+              "obstruct",
+              "throat-chop",
+              "counter",
+              "shadow-claw"
+            ],
+            "ability": "reckless"
+          }
+        ],
+        "recommendedPokemonIds": [
+          35,
+          56,
+          123,
+          280
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo dark.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "galar-8",
+        "order": 8,
+        "trainer": "Raihan",
+        "title": "Líder de Ginásio",
+        "specialty": "dragon",
+        "location": "Hammerlocke",
+        "badge": "Insígnia de Hammerlocke",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          46,
+          49
+        ],
+        "description": "Raihan usa uma estratégia centrada no tipo dragon. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#526bc2",
+        "party": [
+          {
+            "pokemon": "gigalith",
+            "level": 46,
+            "moves": [
+              "stealth-rock",
+              "sand-tomb",
+              "rock-blast",
+              "body-press"
+            ],
+            "ability": "sand-stream"
+          },
+          {
+            "pokemon": "flygon",
+            "level": 47,
+            "moves": [
+              "thunder-punch",
+              "breaking-swipe",
+              "crunch",
+              "steel-wing"
+            ],
+            "ability": "levitate"
+          },
+          {
+            "pokemon": "sandaconda",
+            "level": 46,
+            "moves": [
+              "protect",
+              "glare",
+              "fire-fang",
+              "earth-power"
+            ],
+            "ability": "sand-spit"
+          },
+          {
+            "pokemon": "duraludon",
+            "level": 48,
+            "moves": [
+              "breaking-swipe",
+              "body-press",
+              "stone-edge",
+              "iron-head"
+            ],
+            "ability": "heavy-metal"
+          }
+        ],
+        "recommendedPokemonIds": [
+          35,
+          124,
+          220,
+          333
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo dragon.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "galar-4a",
+        "order": 4,
+        "trainer": "Bea",
+        "title": "Líder de Ginásio",
+        "specialty": "fighting",
+        "location": "Stow-on-Side",
+        "badge": "Insígnia de Stow-on-Side",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          34,
+          37
+        ],
+        "description": "Bea usa uma estratégia centrada no tipo fighting. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#c3455c",
+        "party": [
+          {
+            "pokemon": "hitmontop",
+            "level": 34,
+            "moves": [
+              "triple-kick",
+              "quick-attack",
+              "counter",
+              "revenge"
+            ],
+            "ability": "technician"
+          },
+          {
+            "pokemon": "pangoro",
+            "level": 34,
+            "moves": [
+              "bullet-punch",
+              "circle-throw",
+              "night-slash",
+              "work-up"
+            ],
+            "ability": "mold-breaker"
+          },
+          {
+            "pokemon": "sirfetchd",
+            "level": 35,
+            "moves": [
+              "detect",
+              "swords-dance",
+              "brutal-swing",
+              "revenge"
+            ],
+            "ability": "steadfast"
+          },
+          {
+            "pokemon": "machamp",
+            "level": 36,
+            "moves": [
+              "scary-face",
+              "revenge",
+              "knock-off",
+              "strength"
+            ],
+            "ability": "guts"
+          }
+        ],
+        "recommendedPokemonIds": [
+          16,
+          63,
+          92,
+          177
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo fighting.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "galar-4b",
+        "order": 4,
+        "trainer": "Allister",
+        "title": "Líder de Ginásio",
+        "specialty": "ghost",
+        "location": "Stow-on-Side",
+        "badge": "Insígnia de Stow-on-Side",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          34,
+          37
+        ],
+        "description": "Allister usa uma estratégia centrada no tipo ghost. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#665a9c",
+        "party": [
+          {
+            "pokemon": "yamask",
+            "level": 34,
+            "moves": [
+              "brutal-swing",
+              "hex",
+              "disable"
+            ],
+            "ability": "wandering-spirit"
+          },
+          {
+            "pokemon": "mimikyu-disguised",
+            "level": 34,
+            "moves": [
+              "shadow-sneak",
+              "baby-doll-eyes",
+              "hone-claws",
+              "slash"
+            ],
+            "ability": "disguise"
+          },
+          {
+            "pokemon": "cursola",
+            "level": 35,
+            "moves": [
+              "ancient-power",
+              "curse",
+              "hex"
+            ],
+            "ability": "weak-armor"
+          },
+          {
+            "pokemon": "gengar",
+            "level": 36,
+            "moves": [
+              "venoshock",
+              "hex",
+              "hypnosis",
+              "payback"
+            ],
+            "ability": "cursed-body"
+          }
+        ],
+        "recommendedPokemonIds": [
+          19,
+          92,
+          198,
+          215
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo ghost.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "galar-6a",
+        "order": 6,
+        "trainer": "Gordie",
+        "title": "Líder de Ginásio",
+        "specialty": "rock",
+        "location": "Circhester",
+        "badge": "Insígnia de Circhester",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          40,
+          43
+        ],
+        "description": "Gordie usa uma estratégia centrada no tipo rock. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#9b8258",
+        "party": [
+          {
+            "pokemon": "barbaracle",
+            "level": 40,
+            "moves": [
+              "shell-smash",
+              "rock-tomb",
+              "razor-shell"
+            ],
+            "ability": "tough-claws"
+          },
+          {
+            "pokemon": "shuckle",
+            "level": 40,
+            "moves": [
+              "power-split",
+              "stone-edge",
+              "struggle-bug",
+              "rock-tomb"
+            ],
+            "ability": "contrary"
+          },
+          {
+            "pokemon": "stonjourner",
+            "level": 41,
+            "moves": [
+              "stealth-rock",
+              "rock-tomb",
+              "body-slam",
+              "wonder-room"
+            ],
+            "ability": "power-spot"
+          },
+          {
+            "pokemon": "coalossal",
+            "level": 42,
+            "moves": [
+              "tar-shot",
+              "stealth-rock",
+              "heat-crash",
+              "rock-tomb"
+            ],
+            "ability": "steam-engine"
+          }
+        ],
+        "recommendedPokemonIds": [
+          1,
+          7,
+          56,
+          60
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo rock.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      },
+      {
+        "id": "galar-6b",
+        "order": 6,
+        "trainer": "Melony",
+        "title": "Líder de Ginásio",
+        "specialty": "ice",
+        "location": "Circhester",
+        "badge": "Insígnia de Circhester",
+        "reward": "Recompensa da campanha",
+        "recommendedLevel": [
+          40,
+          43
+        ],
+        "description": "Melony usa uma estratégia centrada no tipo ice. Analise também os golpes de cobertura antes da batalha.",
+        "accent": "#5bb8c6",
+        "party": [
+          {
+            "pokemon": "frosmoth",
+            "level": 40,
+            "moves": [
+              "icy-wind",
+              "feather-dance",
+              "bug-buzz",
+              "hail"
+            ],
+            "ability": "shield-dust"
+          },
+          {
+            "pokemon": "darmanitan-galar-standard",
+            "level": 40,
+            "moves": [
+              "icicle-crash",
+              "headbutt",
+              "taunt",
+              "fire-fang"
+            ],
+            "ability": "zen-mode"
+          },
+          {
+            "pokemon": "eiscue-ice",
+            "level": 41,
+            "moves": [
+              "amnesia",
+              "freeze-dry",
+              "hail",
+              "icy-wind"
+            ],
+            "ability": "ice-face"
+          },
+          {
+            "pokemon": "lapras",
+            "level": 42,
+            "moves": [
+              "icy-wind",
+              "ice-beam",
+              "surf",
+              "sing"
+            ],
+            "ability": "shell-armor"
+          }
+        ],
+        "recommendedPokemonIds": [
+          58,
+          66,
+          74,
+          81
+        ],
+        "tips": [
+          "Priorize golpes que explorem as fraquezas do tipo ice.",
+          "Confira os golpes de cobertura: a especialidade do líder não representa todos os ataques disponíveis."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paldea",
+    "name": "Paldea",
+    "game": "Scarlet / Violet",
+    "source": "domtronn/nuzlocke.data: leagues/sv.txt",
+    "battles": []
+  }
+]

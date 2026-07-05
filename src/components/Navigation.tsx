@@ -1,4 +1,4 @@
-import { BarChart3, Heart, Menu, Swords, UserRound } from 'lucide-react'
+import { BarChart3, BookOpen, Heart, Menu, Swords, UserRound } from 'lucide-react'
 import { useStore } from '../store'
 import type { View } from '../types'
 
@@ -25,6 +25,9 @@ export function DesktopNavigation({ view, onChange }: NavigationProps) {
         <button className={view === 'team' ? 'active' : ''} onClick={() => onChange('team')}>
           <Swords />Meu time
         </button>
+        <button className={view === 'guide' ? 'active' : ''} onClick={() => onChange('guide')}>
+          <BookOpen />Guia de batalhas
+        </button>
         <button className={view === 'profile' ? 'active' : ''} onClick={() => onChange('profile')}>
           <UserRound />Perfil
         </button>
@@ -45,6 +48,9 @@ export function MobileNavigation({ view, onChange }: NavigationProps) {
       </button>
       <button className={view === 'team' ? 'active' : ''} onClick={() => onChange('team')}>
         <Swords />Time
+      </button>
+      <button className={view === 'guide' ? 'active' : ''} onClick={() => onChange('guide')}>
+        <BookOpen />Guia
       </button>
       <button className={view === 'favorites' ? 'active' : ''} onClick={() => onChange('favorites')}>
         <Heart />Favoritos

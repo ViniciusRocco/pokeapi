@@ -15,6 +15,7 @@ import { WelcomeFlow } from './features/auth/WelcomeFlow'
 import { FavoritesView } from './features/favorites/FavoritesView'
 import { ProfileView } from './features/profile/ProfileView'
 import { TeamBuilder } from './features/team/TeamBuilder'
+import { BattleGuide } from './features/battle-guide/BattleGuide'
 import { usePokemonCatalog } from './hooks/usePokemonCatalog'
 import type { Filters, Pokemon, View } from './types'
 import { defaultFilters, readStoredFilters } from './utils/pokemon'
@@ -80,6 +81,8 @@ export default function App() {
           <CompareView onSelect={setSelected} />
         ) : view === 'team' ? (
           <TeamBuilder onOpen={setSelected} />
+        ) : view === 'guide' ? (
+          <BattleGuide onOpenPokemon={setSelected} onOpenTeam={() => setView('team')} />
         ) : view === 'profile' ? (
           <ProfileView onAuthenticate={() => setWelcome('choice')} />
         ) : view === 'favorites' ? (
